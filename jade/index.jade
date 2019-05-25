@@ -1,0 +1,27 @@
+extends _misc/main
+
+block title
+	| Главная страница
+
+block content
+	section.main-slider
+		.wrapper.wrapper-no-flex
+			.main-slider__carousel
+				.main-slider__slide(style="background-image: url(img/banner.jpg)")
+				.main-slider__slide(style="background-image: url(img/banner.jpg)")
+				.main-slider__slide(style="background-image: url(img/banner.jpg)")
+	
+	section.partners
+		.wrapper
+			h2.wrapped Наши партнеры
+		
+		.wrapper.partners-content
+			.partners-item
+				img(src="img/logos/ozon.png", alt="alt")
+			.partners-item
+				img(src="img/logos/parisnail.png", alt="alt")
+			.partners-item
+				img(src="img/logos/logo-wildberries.png", alt="alt")
+			.partners-item
+				img(src="img/logos/krasotkapro-logo.png", alt="alt")
+

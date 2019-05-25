@@ -1,0 +1,153 @@
+.mich-popup#mich-popup-questions.mfp-hide
+	header.mich-popup__header 
+		h2 Мы рады любым вашим вопросам!
+
+	.mich-popup__body
+		form.mich-form(action="#")
+			label.mich-form-label
+				input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="ФИО*" required)
+
+			label.mich-form-label
+				input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="Название компании*" required)
+
+			label.mich-form-label
+				textarea.mich-form-area.mich-inp-serif(name="" placeholder="Введите текст вашего обращения")
+
+			p * Обязательные поля для заполнения
+
+			button.button.button-full.button-wide(type="submit") отправить
+
+			.mich-form__custom-policy
+				label.mich-form-custom
+					input.mich-form-check(type="checkbox", name="")
+					span.mich-form__custom-chek
+				span.mich-form__policy Подписаться на рассылку от D’Michaél
+
+			.mich-form__custom-policy
+				label.mich-form-custom
+					input.mich-form-check(type="checkbox", name="" checked required)
+					span.mich-form__custom-chek
+				span.mich-form__policy Я даю согласие на обработку моих персональных данных в порядке и на условиях, #[a(href="#") указанных в согласии].
+
+
+.mich-popup.mich-news-popup#mich-popup-news.mfp-hide
+	header.mich-popup__header 
+		h2 Получать свежие новости
+
+	.mich-popup__body
+		form.mich-form(action="#")
+			.mich-news-popup__top
+				label.mich-form-label
+					input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="Ваше имя")
+
+				label.mich-form-label
+					input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="Электронная почта")
+
+			button.button.button-full.button-wide(type="submit") подписаться
+
+			.mich-form__custom-policy
+				label.mich-form-custom
+					input.mich-form-check(type="checkbox", name="" required)
+					span.mich-form__custom-chek
+				span.mich-form__policy Я даю согласие на обработку моих персональных данных в порядке и на условиях, #[a(href="#") указанных в согласии].
+
+
+.mich-popup.mich-go-distr#mich-popup-distr.mfp-hide
+	header.mich-popup__header 
+		h2 Стать дистрибьютером
+
+	.mich-popup__body
+		form.mich-form(action="#")
+			label.mich-form-label
+				input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="ФИО*" required)
+
+			label.mich-form-label
+				input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="Название компании*" required)
+			label.mich-form-label.mich-inp-serif.mich-form-label--select
+				select.mich-select(name="" required)
+					option(value="" disabled selected style="display: none;") Сфера деятельности*
+					option(value="") Lorem
+					option(value="") Lorem
+					option(value="") Lorem
+					option(value="") Lorem
+
+			label.mich-form-label
+				input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="Электронная почта*" required)
+			label.mich-form-label
+				input.mich-form-input.mich-inp-serif(type="text", name="" placeholder="Контактный телефон*" required)
+			p * Обязательные поля для заполнения
+
+			button.button.button-full.button-wide(type="submit") подписаться
+
+			
+			.mich-form__custom-policy
+				label.mich-form-custom
+					input.mich-form-check(type="checkbox", name="")
+					span.mich-form__custom-chek
+				span.mich-form__policy Подписаться на рассылку от D’Michaél
+			
+			.mich-form__custom-policy
+				label.mich-form-custom
+					input.mich-form-check(type="checkbox", name="" required checked)
+					span.mich-form__custom-chek
+				span.mich-form__policy Я даю согласие на обработку моих персональных данных в порядке и на условиях, #[a(href="#") указанных в согласии].
+
+
+.mich-popup.mich-go-auth#mich-popup-auth.mfp-hide
+	header.mich-popup__header 
+		h2 Авторизация
+
+	.tabs
+		ul.tabs__list.mich-tabs__list
+			li.tabs__item.tabs__item--active
+				a.tabs__link(href='#item1') Войти
+			li.tabs__item
+				a.tabs__link(href='#item2') Присоединиться
+
+		.mich-popup__body
+			ul.tabs__content
+				li#item1.tabs__item
+					form.mich-form.auth-form(action="#")
+						label.mich-form-label
+							input.mich-form-input(type="text", name="" placeholder="Ваш логин*" required)
+
+						label.mich-form-label
+							input.mich-form-input(type="text", name="" placeholder="Ваш пароль*" required)
+
+						button.button.button-full.button-wide(type="submit") Войти
+				
+				li#item2.tabs__item.hidden
+					form.mich-form(action="#")
+						label.mich-form-label
+							input.mich-form-input(type="text", name="" placeholder="ФИО*" required)
+
+						label.mich-form-label
+							input.mich-form-input(type="text", name="" placeholder="Название компании*" required)
+						label.mich-form-label.mich-form-label--select
+							select.mich-select(name="" required)
+								option(value="" disabled selected style="display: none;") Сфера деятельности*
+								option(value="") Lorem
+								option(value="") Lorem
+								option(value="") Lorem
+								option(value="") Lorem
+
+						label.mich-form-label
+							input.mich-form-input(type="text", name="" placeholder="E-mail*" required)
+						label.mich-form-label
+							input.mich-form-input(type="text", name="" placeholder="Контактный телефон*" required)
+						
+						p * Обязательные поля для заполнения
+
+						button.button.button-full.button-wide(type="submit") отправить
+
+						.mich-form__custom-policy
+							label.mich-form-custom
+								input.mich-form-check(type="checkbox", name="")
+								span.mich-form__custom-chek
+							span.mich-form__policy Подписаться на рассылку от D’Michaél
+						
+						.mich-form__custom-policy
+							label.mich-form-custom
+								input.mich-form-check(type="checkbox", name="" required checked)
+								span.mich-form__custom-chek
+							span.mich-form__policy Я даю согласие на обработку моих персональных данных в порядке и на условиях, #[a(href="#") указанных в согласии].

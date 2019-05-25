@@ -1,0 +1,54 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='utf-8')
+		title
+			block title
+		meta(name='description', content='')
+		link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+		link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+	
+		link(rel='stylesheet', href='css/main.css')
+
+
+	body
+		include _mixins
+
+		nav.mich-mob-nav
+			ul.header-mob-menu
+				li
+					a(href="#").mich-link-menu О бренде
+				li
+					a(href="#").mich-link-menu Каталог продукции
+					ul
+						li
+							a(href="#").mich-link-menu.header-menu__sublink Уход за руками и телом
+						li
+							a(href="#").mich-link-menu.header-menu__sublink Уход за волосами
+				li
+					a(href="#").mich-link-menu Блог
+					ul
+						li
+							a(href="#").mich-link-menu.header-menu__sublink Вопросы и Ответы
+						li
+							a(href="#").mich-link-menu.header-menu__sublink Новости D’Michael
+						li
+							a(href="#").mich-link-menu.header-menu__sublink “Дайте мне красоты!”
+
+				li
+					a(href="#").mich-link-menu Контакты
+
+		main.mich-main
+			include ../_sections/header
+
+			block content
+			include ../_sections/footer
+			include ../_misc/popups
+
+		script(src='js/libs.min.js')
+		include ../_includes/scripts
+		script(src='js/common.js')

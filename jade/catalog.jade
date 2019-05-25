@@ -1,0 +1,25 @@
+extends _misc/main
+
+block title
+	| Catalog
+
+block content
+	section.catalog
+		.wrapper
+			h1.wrapped Каталог продукции
+
+		.catalog-line
+			span Для нее
+
+		.wrapper.catalog-content
+			- for (var i=0; i < 10; i++)
+				include _includes/card
+			.catalog-more
+				a(href="#").button ЕЩЁ
+
+		.catalog-line
+			span Для него
+
+		.wrapper.catalog-content
+			- for (var i=0; i <5; i++)
+				include _includes/card

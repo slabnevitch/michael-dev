@@ -1,0 +1,16 @@
+.catalog-content{
+	width: 100%;
+	// margin-left: -30px;
+	// margin-right: -30px;
+	// outline: 1px solid;
+}
+.catalog-more{
+	@include col();
+	@include col-12();
+	margin-bottom: 	rem(36);
+	text-align: center;
+
+	.button{
+		width: 140px;	
+	}
+}
