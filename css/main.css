@@ -3867,6 +3867,62 @@ ul, li {
   .catalog-more .button {
     width: 140px; }
 
+.wishes-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(58.33333% - 20px);
+  width: calc(58.33333% - 20px); }
+
+.wishes-wrapper {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 50px; }
+  .wishes-wrapper .product-card {
+    width: -webkit-calc(33.33333% - 50px);
+    width: calc(33.33333% - 50px);
+    margin-left: 25px;
+    margin-right: 25px; }
+    .wishes-wrapper .product-card .product-card__icon-block {
+      display: block; }
+      .wishes-wrapper .product-card .product-card__icon-block .icon-mag {
+        display: none; }
+
+.mich-search-wide .mich-form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px);
+  position: relative; }
+  .mich-search-wide .mich-form .mich-form-input {
+    padding-top: 6px; }
+  .mich-search-wide .mich-form .search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #6A4F35; }
+    .mich-search-wide .mich-form .search-button .icon-mag:before {
+      color: #fff; }
+
 .footer {
   padding-top: 1.78571rem;
   border-top: 1px solid rgba(106, 79, 53, 0.2); }

@@ -14,3 +14,35 @@
 		width: 140px;	
 	}
 }
+.wishes-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+	@include col();
+	@include col-7();
+}
+.whises{
+
+}
+.wishes-wrapper{
+		justify-content: center;
+		margin-bottom: 50px;
+		
+		.product-card{
+			width: calc(33.33333% - 50px);
+			margin-left: 25px;
+			margin-right: 25px;
+
+			.product-card__icon-block{
+				display: block;
+
+				.icon-mag{
+					display: none;
+				}
+			}
+		}
+}

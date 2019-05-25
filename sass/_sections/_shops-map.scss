@@ -1,0 +1,27 @@
+.mich-search-wide{
+	.mich-form{
+		@include col();
+		@include col-12();
+
+		position: relative;
+
+		.mich-form-input{
+			padding-top: 6px;
+		}
+
+		.search-button{
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30px;
+			height: 30px;
+			background-color: $font;
+
+			.icon-mag{
+				&:before{
+					color: #fff;
+				}
+			}
+		}
+	}
+}

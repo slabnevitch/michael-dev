@@ -1,0 +1,15 @@
+extends _misc/main
+
+block title
+	| Wishes
+
+block content
+	section.wishes
+		.wrapper
+			h1.wrapped Ваш список желаний
+		
+		.wrapper.wishes-wrapper
+			.wishes-content
+				- for (var i=0; i < 6; i++)
+					include _includes/card
+
