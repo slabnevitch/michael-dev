@@ -25,3 +25,131 @@
 		}
 	}
 }
+.mich-mapview-handlers{
+	@include col();
+	@include col-12();
+	margin-bottom: 16px;
+}
+.mich-mapview-handler{
+	text-decoration: none;
+		margin-right: 19px;
+
+	span{
+		vertical-align: middle;
+
+
+
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+
+	.mich-icomoon-icon{
+		margin-right: 8px;
+		&:before{
+			color: $font;
+		}
+	}
+}
+.mich-big-map{
+	width: 100%;
+	padding-bottom: 40%;
+}
+.mich-map-address{
+	@include col();
+	@include col-7();
+	padding-top: 20px;
+}
+.mich-map-block-sm{
+	@include col();
+	@include col-5();
+	position: relative;
+	padding-left: 25px;
+	min-height: 500px;
+}
+.mich-map-locs{
+	
+	border-top: 1px solid $gray-line;
+	border-bottom: 1px solid $gray-line;
+}
+.mich-map-address__row{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.mich-map-address__phone{
+	position: relative;
+	margin-right: rem(46);
+
+	&:before{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 14px;
+		width: 24px;
+		height: 24px;
+		background:  url(../img/icons/phone.png) 0 0 no-repeat;
+		background-size: 100%;
+	}
+
+}
+.mich-map-address__schedule{
+	span{
+		vertical-align: middle;
+	}
+	.icon-time{
+		margin-right: 14px;
+	}
+}
+.map-disclose{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding-left: 7px;
+	padding-right: 41px;
+	z-index: 1;
+
+	.disclose-icon{
+		position: absolute;
+		right: 9px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:before{
+			font-size: 24px;
+			color: #fff;
+		}
+	}
+
+	&:hover, &:active{
+		.disclose-icon{
+			&:before{
+				color: $accent;
+			}
+		}
+	}
+	
+
+}
+.mich-sm-map{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+}
+.shops-map__fantom{
+	@include col();
+	@include col-12();
+	padding-top: rem(35);
+	padding-bottom: rem(40);
+	text-align: center;
+
+	p{
+		margin-bottom: rem(36);
+	}
+}

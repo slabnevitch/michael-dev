@@ -3203,6 +3203,10 @@ ul, li {
   font-size: 22px; }
   .mich-icomoon-icon:before {
     color: #49BAAE; }
+  .mich-icomoon-icon-brown {
+    font-size: 22px; }
+    .mich-icomoon-icon-brown:before {
+      color: #6A4F35; }
 
 .icon-mag:before {
   color: #6A4F35; }
@@ -3922,6 +3926,134 @@ ul, li {
     background-color: #6A4F35; }
     .mich-search-wide .mich-form .search-button .icon-mag:before {
       color: #fff; }
+
+.mich-mapview-handlers {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin-bottom: 16px; }
+
+.mich-mapview-handler {
+  text-decoration: none;
+  margin-right: 19px; }
+  .mich-mapview-handler span {
+    vertical-align: middle; }
+  .mich-mapview-handler:last-child {
+    margin-right: 0; }
+  .mich-mapview-handler .mich-icomoon-icon {
+    margin-right: 8px; }
+    .mich-mapview-handler .mich-icomoon-icon:before {
+      color: #6A4F35; }
+
+.mich-big-map {
+  width: 100%;
+  padding-bottom: 40%; }
+
+.mich-map-address {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(58.33333% - 20px);
+  width: calc(58.33333% - 20px);
+  padding-top: 20px; }
+
+.mich-map-block-sm {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(41.66667% - 20px);
+  width: calc(41.66667% - 20px);
+  position: relative;
+  padding-left: 25px;
+  min-height: 500px; }
+
+.mich-map-locs {
+  border-top: 1px solid rgba(106, 79, 53, 0.2);
+  border-bottom: 1px solid rgba(106, 79, 53, 0.2); }
+
+.mich-map-address__row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+
+.mich-map-address__phone {
+  position: relative;
+  margin-right: 3.28571rem; }
+  .mich-map-address__phone:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/phone.png) 0 0 no-repeat;
+    background-size: 100%; }
+
+.mich-map-address__schedule span {
+  vertical-align: middle; }
+
+.mich-map-address__schedule .icon-time {
+  margin-right: 14px; }
+
+.map-disclose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-left: 7px;
+  padding-right: 41px;
+  z-index: 1; }
+  .map-disclose .disclose-icon {
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .map-disclose .disclose-icon:before {
+      font-size: 24px;
+      color: #fff; }
+  .map-disclose:hover .disclose-icon:before, .map-disclose:active .disclose-icon:before {
+    color: #49BAAE; }
+
+.mich-sm-map {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.shops-map__fantom {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px);
+  padding-top: 2.5rem;
+  padding-bottom: 2.85714rem;
+  text-align: center; }
+  .shops-map__fantom p {
+    margin-bottom: 2.57143rem; }
 
 .footer {
   padding-top: 1.78571rem;
