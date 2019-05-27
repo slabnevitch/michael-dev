@@ -1,0 +1,28 @@
+.mich-contacts{
+	justify-content: space-between;
+	padding-top: rem(50);
+}
+.mich-contacts__column{
+	@include col();
+	// @include col-2();
+	margin-bottom: 40px;
+
+	&--co-working{
+		@include col-3();
+	}
+	// &--addr{
+	// 	@include col-2();
+	// }
+	p{
+		margin-top: 0;
+	}
+	a{
+		color: $accent;
+		margin-left: 4px;
+	}
+}
+.mich-contacts__title{
+	margin-bottom: rem(20);
+	font-size: 18px;
+}
+

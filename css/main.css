@@ -3528,6 +3528,12 @@ ul, li {
   .product-card__icon-block .icon-heart-full {
     margin-bottom: 17px; }
 
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
 /*--end main styles---*/
 .mich-popup {
   position: relative;
@@ -4054,6 +4060,162 @@ ul, li {
   text-align: center; }
   .shops-map__fantom p {
     margin-bottom: 2.57143rem; }
+
+.mich-contacts {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 3.57143rem; }
+
+.mich-contacts__column {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  margin-bottom: 40px; }
+  .mich-contacts__column--co-working {
+    width: -webkit-calc(25% - 20px);
+    width: calc(25% - 20px); }
+  .mich-contacts__column p {
+    margin-top: 0; }
+  .mich-contacts__column a {
+    color: #49BAAE;
+    margin-left: 4px; }
+
+.mich-contacts__title {
+  margin-bottom: 1.42857rem;
+  font-size: 18px; }
+
+.blog-previews {
+  height: 480px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%; }
+
+.blog-preview {
+  position: relative;
+  background: 0 0 no-repeat;
+  background-size: cover; }
+  .blog-preview:first-child {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 38.625%;
+    -ms-flex: 1 1 38.625%;
+    flex: 1 1 38.625%;
+    text-align: center; }
+  .blog-preview:nth-child(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 33.2031%;
+    -ms-flex: 1 1 33.2031%;
+    flex: 1 1 33.2031%; }
+    .blog-preview:nth-child(2):before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(196, 196, 196, 0.2); }
+  .blog-preview:last-child {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 28.1918%;
+    -ms-flex: 1 1 28.1918%;
+    flex: 1 1 28.1918%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.blog-preview-sub {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  background: 0 0 no-repeat;
+  background-size: cover; }
+  .blog-preview-sub:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .blog-preview-sub:first-child:before {
+    background-color: rgba(0, 0, 0, 0.3); }
+  .blog-preview-sub:last-child:before {
+    background-color: rgba(243, 181, 192, 0.3); }
+
+.blog-preview__big-title {
+  position: relative;
+  padding: 0 15px;
+  z-index: 1;
+  display: inline-block;
+  font-size: 3.42857rem;
+  line-height: 4.57143rem;
+  text-align: center;
+  color: #fff;
+  background-color: #A8D394; }
+
+.blog-preview__frame {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  bottom: auto;
+  top: 30px;
+  width: 95%;
+  height: 92%;
+  border: 2px solid #fff; }
+
+.blog-preview__header {
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  color: #fff;
+  z-index: 1; }
+
+.blog-preview__title {
+  padding-right: 7px;
+  font-size: 1.71429rem;
+  line-height: 2.28571rem; }
+
+span.blog-preview__date {
+  margin-right: 5px; }
+
+.blog-bottom {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px);
+  padding: 2.85714rem 0; }
+  .blog-bottom .button {
+    width: 140px; }
 
 .footer {
   padding-top: 1.78571rem;

@@ -497,4 +497,12 @@ ul, li{
     margin-bottom: 17px;
   }
 }
+.text{
+  &-center{
+    text-align: center;
+  }
+  &-right{
+    text-align: right;
+  }
+}
 /*--end main styles---*/

@@ -26,6 +26,8 @@ block content
 					span.mich-iconed-link.icon-settings.mich-icomoon-icon
 					span.mich-link Списком
 
+
+
 		.mich-big-map#mich-map-big
 
 		.mich-map-locs
@@ -82,19 +84,22 @@ block content
 					#mich-map-sm.mich-sm-map
 		
 		.wrapper.mich-contacts
-			.mich-contacts__column
+			.mich-contacts__column.mich-contacts__column--addr
 				.mich-contacts__title Наш адрес:
-				p 192102, г. Санкт-Петербург, ул. Прогонная, д. 
+				p 192102, г. Санкт-Петербург, 
+					br
+					| ул. Прогонная, д. 3
 
-				p 
-				 span Тел.: 8 (812) 213 33 77
-				 span E-mail: #[a(href="mailto:contract@dmichael.ru").mich-link contract@dmichael.ru]
+				div Тел.: 8 (812) 213 33 77
+				div 
+					span E-mail: 
+					a(href="mailto:contract@dmichael.ru").mich-link contract@dmichael.ru
 
-		 .mich-contacts__column
+			.mich-contacts__column
 				.mich-contacts__title Режим работы:
 				p Пн-Пт: с 09.00 до 18.00 
 					br
-					| Сб, Вс: выходной\
+					| Сб, Вс: выходной
 
 			.mich-contacts__column
 				.mich-contacts__title Реквизиты компании:
@@ -106,7 +111,7 @@ block content
 					br
 					| КПП: 781601001
 
-			.mich-contacts__column
+			.mich-contacts__column.mich-contacts__column--co-working
 				.mich-contacts__title Предложения по сотрудничеству:
 				p
 					span E-mail:
