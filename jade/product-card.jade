@@ -1,0 +1,60 @@
+extends _misc/main
+
+block title
+	| Product card
+
+block content
+	.product-top(style="background-color: #6BD1DD;")
+		.wrapper.product-top__wrapper
+			.product-nav
+
+			.product-dislplay
+				.product-dislplay__nav
+				.product-slider
+					- for (var i=1; i < 5; i++)
+						.product-slide(data-thumb="img/products/product-sm-"+i+".png")
+							img.product-slide__img(src="img/products/product-lg-1.png", alt="alt")
+			
+			.product-info
+				.product-info__title Маска для рук D'Michaél Les note de Versailles
+
+				p.product-info__descr Подарите своим рукам восхитительный уход с маской от D’Michaél. 
+					br
+					| Нежнейшая текстура маски обеспечивает Вам приятное расслабление во время нанесения средства.
+
+				.product-info__buttons
+					a(href="#").product-info__favourites.icon-link-block
+						span.mich-icomoon-icon.iconed-link.icon-heart-empty
+						span.mich-link Добавить в желаемые
+
+					a(href="#").button.button-brd-wht Заказать товар
+
+				.product-info__share
+					div Поделиться товаром:
+					a(href="#").mich-icomoon-icon.iconed-link.icon-inst
+					a(href="#").mich-icomoon-icon.iconed-link.icon-vk
+					a(href="#").mich-icomoon-icon.iconed-link.icon-fb
+					a(href="#").mich-icomoon-icon.iconed-link.icon-pint
+					a(href="#").mich-icomoon-icon.iconed-link.icon-whatsapp
+
+	.product-chars
+		.tabs
+			.wrapper
+				ul.tabs__list.mich-tabs__list
+					li.tabs__item.tabs__item--active
+						a.tabs__link(href="#" data-tav='1') Нанесение
+					li.tabs__item
+						a.tabs__link(href="#" data-tav='2') Ингридиенты
+					li.tabs__item
+						a.tabs__link(href="#" data-tav='3') Характеристики
+					li.tabs__item
+						a.tabs__link(href="#" data-tav='4') Отзывы (3)
+			
+			.wrapper.product-chars__content-wrapper
+				ul.tabs__content
+					li.tabs__item(data-tab="1")
+						p Нанести маску на кожу рук, надеть рукавички или укрыть полотенцем. Оставить на 10-15 минут. Остатки снять влажной салфеткой. Маска идеальна для SPA-процедур. Можно использовать вместо завершающего крема. Для профессионального использования.
+					
+					li.tabs__item.hidden(data-tab="2") 2
+					li.tabs__item.hidden(data-tab="2") 3
+					li.tabs__item.hidden(data-tab="2") 4

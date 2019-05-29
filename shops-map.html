@@ -265,18 +265,18 @@
           </form>
         </div>
       </div>
-      <div id="mich-popup-auth" class="mich-popup mich-go-auth mfp-hide">
+      <div id="mich-popup-auth" class="mich-popup mich-go-auth">
         <header class="mich-popup__header"> 
           <h2>Авторизация</h2>
         </header>
         <div class="tabs">
           <ul class="tabs__list mich-tabs__list">
-            <li class="tabs__item tabs__item--active"><a href="#item1" class="tabs__link">Войти</a></li>
-            <li class="tabs__item"><a href="#item2" class="tabs__link">Присоединиться</a></li>
+            <li class="tabs__item tabs__item--active"><a href="#" data-tav="1" class="tabs__link">Войти</a></li>
+            <li class="tabs__item"><a href="#" data-tav="2" class="tabs__link">Присоединиться</a></li>
           </ul>
           <div class="mich-popup__body">
             <ul class="tabs__content">
-              <li id="item1" class="tabs__item">
+              <li data-tab="1" class="tabs__item">
                 <form action="#" class="mich-form auth-form">
                   <label class="mich-form-label">
                     <input type="text" name="" placeholder="Ваш логин*" required class="mich-form-input">
@@ -287,7 +287,7 @@
                   <button type="submit" class="button button-full button-wide">Войти</button>
                 </form>
               </li>
-              <li id="item2" class="tabs__item hidden">
+              <li data-tab="0" class="tabs__item hidden">
                 <form action="#" class="mich-form">
                   <label class="mich-form-label">
                     <input type="text" name="" placeholder="ФИО*" required class="mich-form-input">
@@ -329,8 +329,11 @@
         </div>
       </div>
     </main>
-    <script src="js/libs.min.js"></script>
+    <script src="/libs/jquery/jquery-1.11.2.min.js"></script>
     <script src="/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/libs/slick-master/slick.js"></script>
+    <script src="/libs/slideout/slideout.js"></script>
+    <script src="/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="libs/superfish/dist/js/hoverIntent.js"></script>
     <script src="libs/superfish/dist/js/superfish.js"></script>
     <script src="js/map.js"></script>

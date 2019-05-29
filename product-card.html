@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Article</title>
+    <title>Product card</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -74,30 +74,50 @@
           </div>
         </div>
       </header>
-      <section class="mich-article">
-        <div class="wrapper">
-          <h1 class="wrapped">Новости D’Michael</h1>
-        </div>
-        <article class="mich-article-item">
-          <div class="wrapper">
-            <div style="background-image: url(img/article.jpg)" class="mich-article__img"></div>
-          </div>
-          <div class="wrapper mich-article__wrapper">
-            <div class="mich-article__content">
-              <div class="mich-article-item__date">16.02.2019</div>
-              <h2>Новый аромат от D’Michael Les notes de Alsace</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt nunc lorem, nec faucibus mi facilisis eget. Mauris laoreet, nisl id faucibus pellentesque, mi mi tempor enim, sit amet interdum felis nibh a leo. Donec efficitur velit ac nisi rutrum, eu ornare augue tristique. Vestibulum eget convallis odio, sed viverra quam. Etiam vulputate sed elit in malesuada. Aenean ut efficitur purus. Curabitur fringilla lacus sit amet orci vehicula molestie.</p>
-              <p>Nunc et tristique augue, nec iaculis purus. Nunc id lorem massa. Ut convallis sodales sem, id bibendum urna cursus et. Proin interdum metus ut tellus rutrum, at luctus tellus sodales. Integer neque massa, venenatis sit amet ultrices id, iaculis a nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum ante vitae lectus molestie, ornare eleifend justo commodo. Morbi placerat nec neque ut laoreet.</p>
-              <div class="mich-article__footer">
-                <div class="mich-article__tags"><span>Теги:</span>
-                  <div><a href="#">Новости D’Michael</a><a href="#">Alsace</a><a href="#">Товары</a></div>
-                </div>
-                <div class="mich-article__share"><span>Поделиться статьей:</span><a href="#" class="icon-inst iconed-link mich-icomoon-icon"></a><a href="#" class="icon-vk iconed-link mich-icomoon-icon"></a><a href="#" class="icon-fb iconed-link mich-icomoon-icon"></a><a href="#" class="icon-pint iconed-link mich-icomoon-icon"></a><a href="#" class="icon-whatsapp iconed-link mich-icomoon-icon"></a></div>
-              </div>
+      <div style="background-color: #6BD1DD;" class="product-top">
+        <div class="wrapper product-top__wrapper">
+          <div class="product-nav"></div>
+          <div class="product-dislplay">
+            <div class="product-dislplay__nav"></div>
+            <div class="product-slider">
+              <div data-thumb="img/products/product-sm-1.png" class="product-slide"><img src="img/products/product-lg-1.png" alt="alt" class="product-slide__img"></div>
+              <div data-thumb="img/products/product-sm-2.png" class="product-slide"><img src="img/products/product-lg-1.png" alt="alt" class="product-slide__img"></div>
+              <div data-thumb="img/products/product-sm-3.png" class="product-slide"><img src="img/products/product-lg-1.png" alt="alt" class="product-slide__img"></div>
+              <div data-thumb="img/products/product-sm-4.png" class="product-slide"><img src="img/products/product-lg-1.png" alt="alt" class="product-slide__img"></div>
             </div>
           </div>
-        </article>
-      </section>
+          <div class="product-info">
+            <div class="product-info__title">Маска для рук D'Michaél Les note de Versailles</div>
+            <p class="product-info__descr">Подарите своим рукам восхитительный уход с маской от D’Michaél. <br>Нежнейшая текстура маски обеспечивает Вам приятное расслабление во время нанесения средства.</p>
+            <div class="product-info__buttons"><a href="#" class="product-info__favourites icon-link-block"><span class="mich-icomoon-icon iconed-link icon-heart-empty"></span><span class="mich-link">Добавить в желаемые</span></a><a href="#" class="button button-brd-wht">Заказать товар</a></div>
+            <div class="product-info__share">
+              <div>Поделиться товаром:</div><a href="#" class="mich-icomoon-icon iconed-link icon-inst"></a><a href="#" class="mich-icomoon-icon iconed-link icon-vk"></a><a href="#" class="mich-icomoon-icon iconed-link icon-fb"></a><a href="#" class="mich-icomoon-icon iconed-link icon-pint"></a><a href="#" class="mich-icomoon-icon iconed-link icon-whatsapp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-chars">
+        <div class="tabs">
+          <div class="wrapper">
+            <ul class="tabs__list mich-tabs__list">
+              <li class="tabs__item tabs__item--active"><a href="#" data-tav="1" class="tabs__link">Нанесение</a></li>
+              <li class="tabs__item"><a href="#" data-tav="2" class="tabs__link">Ингридиенты</a></li>
+              <li class="tabs__item"><a href="#" data-tav="3" class="tabs__link">Характеристики</a></li>
+              <li class="tabs__item"><a href="#" data-tav="4" class="tabs__link">Отзывы (3)</a></li>
+            </ul>
+          </div>
+          <div class="wrapper product-chars__content-wrapper">
+            <ul class="tabs__content">
+              <li data-tab="1" class="tabs__item">
+                <p>Нанести маску на кожу рук, надеть рукавички или укрыть полотенцем. Оставить на 10-15 минут. Остатки снять влажной салфеткой. Маска идеальна для SPA-процедур. Можно использовать вместо завершающего крема. Для профессионального использования.</p>
+              </li>
+              <li data-tab="2" class="tabs__item hidden">2</li>
+              <li data-tab="2" class="tabs__item hidden">3</li>
+              <li data-tab="2" class="tabs__item hidden">4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <footer class="footer">
         <div class="footer-top">
           <div class="wrapper">

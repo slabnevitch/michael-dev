@@ -76,7 +76,7 @@ ul, li{
   border: none;
   color: $accent;
   text-decoration: none;
-  font-size: 13px;
+  // font-size: 13px;
   font-family: $pt;
   border: 2px solid $accent;
   text-align: center;
@@ -103,6 +103,16 @@ ul, li{
   &-wide{
   	width: 100%;
 
+  }
+  &-brd-wht{
+    border-color: #fff;
+    color: #fff;
+
+    &:hover, &:active{
+      background-color: #fff;
+      color: $accent;
+    }
+    
   }
 	
   // &:hover{
@@ -157,6 +167,15 @@ ul, li{
 .icon-heart-full{
   &:before{
     color: $pink;
+  }
+}
+.icon-link-block{
+  text-decoration: none;
+  .mich-icomoon-icon{
+    margin-right: 12px;
+  }
+  span{
+    vertical-align: middle;
   }
 }
 .hidden{

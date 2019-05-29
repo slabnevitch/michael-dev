@@ -7,9 +7,19 @@ jQuery(function() {
 		// end superfish
 
 		// slick
-			$('.main-slider__carousel').slick({
-				
+			$('.main-slider__carousel').slick({});
+
+			$('.product-slider').slick({
+				dots: true,
+				fade: true,
+				appendArrows: $('.product-dislplay__nav'),
+				appendDots: $('.product-nav'),
+				customPaging : function(slider, i) {
+			        var thumb = $(slider.$slides[i]).attr('data-thumb');
+			        return '<a><img src="'+thumb+'"></a>';
+			    }
 			});
+
 		// end slick
 
 		// magnific-popup
@@ -47,7 +57,7 @@ jQuery(function() {
 			e.preventDefault();
 
 			var $th = $(this),
-				$href = $th.attr('href'),
+				tab = $th.attr('data-tab'),
 				$parent = $th.parent(),
 				$thTabs = $th.closest('.tabs');
 			
@@ -55,7 +65,7 @@ jQuery(function() {
 					.siblings()
 					.removeClass('tabs__item--active');
 							
-			$thTabs.find($href).removeClass('hidden')
+			$thTabs.find('[data-tab='+tab+']').removeClass('hidden')
 					.siblings()
 					.addClass('hidden');
 		});
