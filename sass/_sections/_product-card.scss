@@ -75,7 +75,7 @@
 .product-info__descr{
 	margin-top: 0;
 	margin-bottom: rem(30);
-	font-family: $r-r;
+	font-family: $r-l;
 	// line-height: 16px;
 	color: #fff;
 }
@@ -106,17 +106,41 @@
 	}
 }
 .product-chars{
+	margin-bottom: 20px;
 	.tabs{
+		.wrapper{
+			justify-content: center;
+		}
 		.mich-tabs__list{
 			@include col();
 			@include col-12();
+			margin-bottom: 0;
+			border-top: none;
+			border-bottom: none;
+			justify-content: center;
 		}
 		.tabs__content{
 			@include col();
 			@include col-6();
+
+			.tabs__item{
+				font-family: $r-l;
+			}
 		}
 	}
 }
+.product-chars__tabs-top{
+	border-top: 1px solid $gray-line;
+	border-bottom: 1px solid $gray-line;
+}
 .product-chars__content-wrapper{
 	justify-content: center;
+}
+.product-chars__tabs-item{
+	padding-top: 20px;
+	min-height: 180px;
+
+	p{
+		margin-top: 0;
+	}
 }

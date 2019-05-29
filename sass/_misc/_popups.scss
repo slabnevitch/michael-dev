@@ -44,7 +44,20 @@
 	}
 }
 .mich-go-auth{
+	.tabs{
+		border-top: none;
+	}
 	.mich-popup__header{
 		margin-bottom: 0;
+	}
+	.mich-tabs__list{
+		margin-bottom: 20px;
+		border-top: none;
+		// border-bottom: 1px solid $gray-line;
+		.tabs__item{
+			width: 50%;
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }

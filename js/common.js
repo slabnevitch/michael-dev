@@ -59,13 +59,17 @@ jQuery(function() {
 			var $th = $(this),
 				tab = $th.attr('data-tab'),
 				$parent = $th.parent(),
-				$thTabs = $th.closest('.tabs');
+				$thTabs = $th.closest('.tabs'),
+				$tabsContent = $thTabs.find('.tabs__content');
 			
 			$parent.addClass('tabs__item--active')
 					.siblings()
 					.removeClass('tabs__item--active');
+
+			console.log(tab);
 							
-			$thTabs.find('[data-tab='+tab+']').removeClass('hidden')
+			$tabsContent.find('[data-tab='+tab+']')
+					.removeClass('hidden')
 					.siblings()
 					.addClass('hidden');
 		});

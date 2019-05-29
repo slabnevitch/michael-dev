@@ -93,16 +93,16 @@
 				span.mich-form__policy Я даю согласие на обработку моих персональных данных в порядке и на условиях, #[a(href="#") указанных в согласии].
 
 
-.mich-popup.mich-go-auth#mich-popup-auth
+.mich-popup.mich-go-auth#mich-popup-auth.mfp-hide
 	header.mich-popup__header 
 		h2 Авторизация
 
 	.tabs
 		ul.tabs__list.mich-tabs__list
 			li.tabs__item.tabs__item--active
-				a.tabs__link(href="#" data-tav='1') Войти
+				a.tabs__link(href="#" data-tab='1') Войти
 			li.tabs__item
-				a.tabs__link(href="#" data-tav='2') Присоединиться
+				a.tabs__link(href="#" data-tab='2') Присоединиться
 
 		.mich-popup__body
 			ul.tabs__content
@@ -116,7 +116,7 @@
 
 						button.button.button-full.button-wide(type="submit") Войти
 				
-				li.tabs__item.hidden(data-tab="0")
+				li.tabs__item.hidden(data-tab="2")
 					form.mich-form(action="#")
 						label.mich-form-label
 							input.mich-form-input(type="text", name="" placeholder="ФИО*" required)

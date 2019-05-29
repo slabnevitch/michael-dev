@@ -39,22 +39,40 @@ block content
 
 	.product-chars
 		.tabs
-			.wrapper
-				ul.tabs__list.mich-tabs__list
-					li.tabs__item.tabs__item--active
-						a.tabs__link(href="#" data-tav='1') Нанесение
-					li.tabs__item
-						a.tabs__link(href="#" data-tav='2') Ингридиенты
-					li.tabs__item
-						a.tabs__link(href="#" data-tav='3') Характеристики
-					li.tabs__item
-						a.tabs__link(href="#" data-tav='4') Отзывы (3)
+			.product-chars__tabs-top
+				.wrapper
+					ul.tabs__list.mich-tabs__list
+						li.tabs__item.tabs__item--active
+							a.tabs__link(href="#" data-tab='1') Нанесение
+						li.tabs__item
+							a.tabs__link(href="#" data-tab='2') Ингридиенты
+						li.tabs__item
+							a.tabs__link(href="#" data-tab='3') Характеристики
+						li.tabs__item
+							a.tabs__link(href="#" data-tab='4') Отзывы (3)
 			
-			.wrapper.product-chars__content-wrapper
-				ul.tabs__content
-					li.tabs__item(data-tab="1")
-						p Нанести маску на кожу рук, надеть рукавички или укрыть полотенцем. Оставить на 10-15 минут. Остатки снять влажной салфеткой. Маска идеальна для SPA-процедур. Можно использовать вместо завершающего крема. Для профессионального использования.
-					
-					li.tabs__item.hidden(data-tab="2") 2
-					li.tabs__item.hidden(data-tab="2") 3
-					li.tabs__item.hidden(data-tab="2") 4
+			.product-chars__tabs-bottom
+				.wrapper.product-chars__content-wrapper
+					ul.tabs__content
+						li.tabs__item.product-chars__tabs-item(data-tab="1")
+							p Нанести маску на кожу рук, надеть рукавички или укрыть полотенцем. Оставить на 10-15 минут. Остатки снять влажной салфеткой. Маска идеальна для SPA-процедур. Можно использовать вместо завершающего крема. Для профессионального использования.
+						
+						li.tabs__item.product-chars__tabs-item.hidden(data-tab="2") 2
+						li.tabs__item.product-chars__tabs-item.hidden(data-tab="3") 3
+						li.tabs__item.product-chars__tabs-item.hidden(data-tab="4") 4
+
+	.products-recomended
+		.catalog-line
+			span Мы рекомендуем с этим товаром
+
+		.wrapper.catalog-content
+			- for (var i=0; i < 5; i++)
+				include _includes/card
+
+	.products-viewed
+		.catalog-line
+			span Вы недавно просматривали
+
+		.wrapper.catalog-content
+			- for (var i=0; i < 5; i++)
+				include _includes/card

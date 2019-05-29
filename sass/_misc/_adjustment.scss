@@ -250,7 +250,7 @@ ul, li{
     	font-style: italic;
     }
     &.mich-inp-serif{
-    	font-family: $r-r;
+    	font-family: $r-l;
     	font-style: italic;
     }
   }
@@ -375,7 +375,7 @@ ul, li{
 }
 .mich-inp-serif{
 	.ui-selectmenu-button.ui-button{
-		font-family: $r-r;
+		font-family: $r-l;
 		font-style: italic;
 
 	}
@@ -397,20 +397,25 @@ ul, li{
 	
 	background-image: url(../img/icons-svg/chev-down.svg);
 }
+.tabs{
+}
 .mich-tabs__list{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-content: flex-start;
-	margin-bottom: 20px;
-	border-bottom: 1px solid $gray-line;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-content: flex-start;
+  // margin-bottom: 20px;
+  border-bottom: 1px solid $gray-line;
+    border-top: 1px solid $gray-line;
+  
 
 	.tabs__item{
 		padding-top: 10px;
 		padding-bottom: 11px;
-		width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
 		text-align: center;
 		border-left: 1px solid $gray-line;
 		.tabs__link{
@@ -466,7 +471,7 @@ ul, li{
 }
 .product-card{
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   width: calc(20% - 60px);
   margin-left: 30px;
   margin-right: 30px;
