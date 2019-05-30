@@ -102,8 +102,12 @@
 		ul{
 			position: absolute;
 			top: 100%;
+			margin-left: -15px;
+			padding-left: 15px;
+			padding-right: 15px;
 			padding-top: 15px;
 			z-index: 999;
+			background-color: #fff;
 
 			li{
 				margin-bottom: 15px;

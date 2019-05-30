@@ -61,3 +61,56 @@
 		}
 	}
 }
+.mich-quick-view{
+	max-width: 700px;
+	padding: 22px 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	h2{
+		margin-top: 30px;
+		margin-bottom: 13px;
+		text-align: left;
+	}
+}
+.quick-view-img{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	flex-shrink: 0;
+	.quick-view-img__pict{
+		@include absolute-center;
+	}
+}
+.quick-view-info{
+	padding-left: 20px;
+}
+.quick-view-info__content{
+	padding-bottom: rem(75);
+	
+}
+.quick-view-info__bottom{
+	.button{
+		margin-bottom: 10px;
+	}
+	.mich-icomoon-icon{
+		&:before{
+			color: $font;
+		}
+	}
+	.icon-link-block{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.product-info__share{
+		.mich-icomoon-icon{
+			font-size: 16px;
+			&:before{
+				color: $accent;
+			}
+		} 
+	}
+}

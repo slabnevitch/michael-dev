@@ -9,16 +9,20 @@ jQuery(function() {
 		// slick
 			$('.main-slider__carousel').slick({});
 
+			$('.product-slider').on('init', function(event, slick, direction){
+				
+			});
 			$('.product-slider').slick({
 				dots: true,
 				fade: true,
 				appendArrows: $('.product-dislplay__nav'),
 				appendDots: $('.product-nav'),
 				customPaging : function(slider, i) {
-			        var thumb = $(slider.$slides[i]).attr('data-thumb');
+			        var thumb = $(slider.$slides[i].querySelector('.product-slide')).attr('data-thumb');
 			        return '<a><img src="'+thumb+'"></a>';
 			    }
 			});
+
 
 		// end slick
 

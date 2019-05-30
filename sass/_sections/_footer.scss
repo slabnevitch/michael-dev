@@ -1,6 +1,9 @@
 .footer{
 	padding-top: rem(25);
+	margin-top: auto;
+	// flex: 0 0 auto;
 	border-top: 1px solid $gray-line;
+
 }
 .footer-top{
 	border-bottom: 1px solid $gray-line;
@@ -12,6 +15,7 @@
 .footer-contacts{
 	@include col();
 	@include col-2();
+
 	margin-bottom: 33px;
 }
 .footer-menu{

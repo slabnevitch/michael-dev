@@ -43,9 +43,10 @@ html(lang='ru')
 					a(href="#").mich-link-menu Контакты
 
 		main.mich-main
-			include ../_sections/header
+			.mich-main__inner
+				include ../_sections/header
 
-			block content
+				block content
 			include ../_sections/footer
 			include ../_misc/popups
 

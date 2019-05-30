@@ -9,9 +9,15 @@
 	background: center top no-repeat;
 	background-size: cover;
 }
+.partners{
+	h2{
+		text-transform: uppercase;
+	}
+}
 .partners-content{
 	justify-content: space-between;
 }
+
 .partners-item{
 	@include col();
 	@include col-3();
