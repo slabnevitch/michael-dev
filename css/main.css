@@ -3719,6 +3719,7 @@ ul, li {
 .header-top__right {
   display: inline-block; }
   .header-top__right a {
+    display: inline-block;
     vertical-align: middle; }
 
 .header-top__where {
@@ -3836,22 +3837,21 @@ ul, li {
   text-transform: uppercase; }
 
 .partners-content {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.partners-item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 10px;
   margin-right: 10px;
   word-wrap: break-word;
-  width: -webkit-calc(25% - 20px);
-  width: calc(25% - 20px);
-  margin-bottom: 35px;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin-bottom: 35px; }
+  .partners-content .slick-slide {
+    text-align: center; }
+
+.partners-item {
   text-align: center; }
   .partners-item img {
+    display: inline-block;
     max-width: 100%; }
 
 .faq {
@@ -4051,6 +4051,44 @@ ul, li {
     .mich-search-wide .mich-form .search-button .icon-mag:before {
       color: #fff; }
 
+.mich-map {
+  position: relative;
+  border-top: 1px solid rgba(106, 79, 53, 0.2);
+  border-bottom: 1px solid rgba(106, 79, 53, 0.2); }
+  .mich-map.trans .mich-map-locs {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  .mich-map.trans .mich-big-map {
+    -webkit-transform: translateX(-webkit-calc(58.33333% + 37px));
+    -ms-transform: translateX(calc(58.33333% + 37px));
+    transform: translateX(calc(58.33333% + 37px)); }
+
+.mich-map__button-wrap {
+  position: relative; }
+
+.mich-map-locs {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  width: 100%;
+  z-index: 0; }
+
+.mich-map-address {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(58.33333% - 20px);
+  width: calc(58.33333% - 20px);
+  padding-top: 20px;
+  background-color: #fff; }
+
 .mich-mapview-handlers {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -4060,10 +4098,18 @@ ul, li {
   width: -webkit-calc(100% - 20px);
   width: calc(100% - 20px);
   margin-bottom: 16px; }
+  .mich-mapview-handlers.list-opened .mich-mapview-handler .mich-link {
+    color: #6A4F35; }
+  .mich-mapview-handlers.list-opened .mich-mapview-handler#map-open .mich-link {
+    color: rgba(106, 79, 53, 0.7); }
 
 .mich-mapview-handler {
   text-decoration: none;
   margin-right: 19px; }
+  .mich-mapview-handler .mich-link {
+    color: rgba(106, 79, 53, 0.7); }
+  .mich-mapview-handler#map-open .mich-link {
+    color: #6A4F35; }
   .mich-mapview-handler span {
     vertical-align: middle; }
   .mich-mapview-handler:last-child {
@@ -4075,17 +4121,9 @@ ul, li {
 
 .mich-big-map {
   width: 100%;
-  padding-bottom: 40%; }
-
-.mich-map-address {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: 10px;
-  margin-right: 10px;
-  word-wrap: break-word;
-  width: -webkit-calc(58.33333% - 20px);
-  width: calc(58.33333% - 20px);
-  padding-top: 20px; }
+  padding-bottom: 40%;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
 
 .mich-map-block-sm {
   -webkit-box-sizing: border-box;
@@ -4098,10 +4136,6 @@ ul, li {
   position: relative;
   padding-left: 25px;
   min-height: 500px; }
-
-.mich-map-locs {
-  border-top: 1px solid rgba(106, 79, 53, 0.2);
-  border-bottom: 1px solid rgba(106, 79, 53, 0.2); }
 
 .mich-map-address__row {
   display: -webkit-flex;
@@ -4146,7 +4180,8 @@ ul, li {
   right: 20px;
   padding-left: 7px;
   padding-right: 41px;
-  z-index: 1; }
+  z-index: 1;
+  cursor: pointer; }
   .map-disclose .disclose-icon {
     position: absolute;
     right: 9px;
@@ -4159,6 +4194,8 @@ ul, li {
       color: #fff; }
   .map-disclose:hover .disclose-icon:before, .map-disclose:active .disclose-icon:before {
     color: #49BAAE; }
+  .map-disclose.contracted .disclose-icon:before {
+    content: "\e906"; }
 
 .mich-sm-map {
   position: absolute;

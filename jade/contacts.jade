@@ -18,70 +18,129 @@ block content
 
 		.wrapper
 			.mich-mapview-handlers
-				a(href="#").mich-mapview-handler
+				a(href="#" id="map-open").mich-mapview-handler
 					span.mich-iconed-link.icon-loc.mich-icomoon-icon
 					span.mich-link На карте
 
-				a(href="#").mich-mapview-handler
+				a(href="#" id="text-open").mich-mapview-handler
 					span.mich-iconed-link.icon-settings.mich-icomoon-icon
 					span.mich-link Списком
 
 
+		.mich-map
+			.wrapper.mich-map__button-wrap
+				.button.button-full.map-disclose
+					span.map-disclose__text Показать списком
+					span.disclose-icon.icon-contract
 
-		.mich-big-map#mich-map-big
+			.mich-map-locs
+				.wrapper
+					.mich-map-address
+						- for (var i=0; i < 2; i++)
+							.mich-map-address__row
+								.mich-map-address__val NailShop "ALEKSANDRA" 
+									br
+									| СПб пр-т Большевиков, д.3, кор.1 
 
-		.mich-map-locs
-			.wrapper
-				.mich-map-address
-					- for (var i=0; i < 2; i++)
-						.mich-map-address__row
-							.mich-map-address__val NailShop "ALEKSANDRA" 
-								br
-								| СПб пр-т Большевиков, д.3, кор.1 
+								.mich-map-address__contacs
+									a(href="tel:+79523685100").mich-map-address__phone.mich-link-menu +7 (952) 368-51-00
+									span.mich-map-address__schedule
+										span.mich-icomoon-icon-brown.icon-time
+										span Пн-вс: 10:00 - 21:00
 
-							.mich-map-address__contacs
-								a(href="tel:+79523685100").mich-map-address__phone.mich-link-menu +7 (952) 368-51-00
-								span.mich-map-address__schedule
-									span.mich-icomoon-icon-brown.icon-time
-									span Пн-вс: 10:00 - 21:00
+							.mich-map-address__row
+								.mich-map-address__val NailShop "ALEKSANDRA" 
+									br
+									| СПБ мкр.Славянка, ул.Ростовская 21К1
 
-						.mich-map-address__row
-							.mich-map-address__val NailShop "ALEKSANDRA" 
-								br
-								| СПБ мкр.Славянка, ул.Ростовская 21К1
+								.mich-map-address__contacs
+									a(href="tel:79500383392").mich-map-address__phone.mich-link-menu +7 (950) 038-33-92
+									span.mich-map-address__schedule
+										span.mich-icomoon-icon-brown.icon-time
+										span Пн-вс: 10:00 - 21:00
 
-							.mich-map-address__contacs
-								a(href="tel:79500383392").mich-map-address__phone.mich-link-menu +7 (950) 038-33-92
-								span.mich-map-address__schedule
-									span.mich-icomoon-icon-brown.icon-time
-									span Пн-вс: 10:00 - 21:00
+							.mich-map-address__row
+								.mich-map-address__val NailShop "ALEKSANDRA" 
+									br
+									| СПб Лиговский пр-т 74
 
-						.mich-map-address__row
-							.mich-map-address__val NailShop "ALEKSANDRA" 
-								br
-								| СПб Лиговский пр-т 74
+								.mich-map-address__contacs
+									a(href="tel:+79967692701").mich-map-address__phone.mich-link-menu +7 (996) 769-27-01
+									span.mich-map-address__schedule
+										span.mich-icomoon-icon-brown.icon-time
+										span Пн-вс: 10:00 - 21:00
 
-							.mich-map-address__contacs
-								a(href="tel:+79967692701").mich-map-address__phone.mich-link-menu +7 (996) 769-27-01
-								span.mich-map-address__schedule
-									span.mich-icomoon-icon-brown.icon-time
-									span Пн-вс: 10:00 - 21:00
+							.mich-map-address__row
+								.mich-map-address__val NailShop "ALEKSANDRA" 
+									br
+									| СПб магазин в ТЦ "Охта Молл"
 
-						.mich-map-address__row
-							.mich-map-address__val NailShop "ALEKSANDRA" 
-								br
-								| СПб магазин в ТЦ "Охта Молл"
+								.mich-map-address__contacs
+									a(href="tel:+79967692700").mich-map-address__phone.mich-link-menu +7 (996) 769-27-00
+									span.mich-map-address__schedule
+										span.mich-icomoon-icon-brown.icon-time
+										span Пн-вс: 10:00 - 21:00
 
-							.mich-map-address__contacs
-								a(href="tel:+79967692700").mich-map-address__phone.mich-link-menu +7 (996) 769-27-00
-								span.mich-map-address__schedule
-									span.mich-icomoon-icon-brown.icon-time
-									span Пн-вс: 10:00 - 21:00
+					//- .mich-map-block-sm
+					//- 	a(href="#").button.button-full.map-disclose Раскрыть карту
+					//- 		span.disclose-icon.icon-expand
+					//- 	#mich-map-sm.mich-sm-map
 
-				.mich-map-block-sm
-					a(href="#").button.button-full.map-disclose Раскрыть карту
-						span.disclose-icon.icon-expand
-					#mich-map-sm.mich-sm-map
+			.mich-big-map#mich-map-big
+		//- .mich-big-map#mich-map-big
+
+		//- .mich-map-locs
+		//- 	.wrapper
+		//- 		.mich-map-address
+		//- 			- for (var i=0; i < 2; i++)
+		//- 				.mich-map-address__row
+		//- 					.mich-map-address__val NailShop "ALEKSANDRA" 
+		//- 						br
+		//- 						| СПб пр-т Большевиков, д.3, кор.1 
+
+		//- 					.mich-map-address__contacs
+		//- 						a(href="tel:+79523685100").mich-map-address__phone.mich-link-menu +7 (952) 368-51-00
+		//- 						span.mich-map-address__schedule
+		//- 							span.mich-icomoon-icon-brown.icon-time
+		//- 							span Пн-вс: 10:00 - 21:00
+
+		//- 				.mich-map-address__row
+		//- 					.mich-map-address__val NailShop "ALEKSANDRA" 
+		//- 						br
+		//- 						| СПБ мкр.Славянка, ул.Ростовская 21К1
+
+		//- 					.mich-map-address__contacs
+		//- 						a(href="tel:79500383392").mich-map-address__phone.mich-link-menu +7 (950) 038-33-92
+		//- 						span.mich-map-address__schedule
+		//- 							span.mich-icomoon-icon-brown.icon-time
+		//- 							span Пн-вс: 10:00 - 21:00
+
+		//- 				.mich-map-address__row
+		//- 					.mich-map-address__val NailShop "ALEKSANDRA" 
+		//- 						br
+		//- 						| СПб Лиговский пр-т 74
+
+		//- 					.mich-map-address__contacs
+		//- 						a(href="tel:+79967692701").mich-map-address__phone.mich-link-menu +7 (996) 769-27-01
+		//- 						span.mich-map-address__schedule
+		//- 							span.mich-icomoon-icon-brown.icon-time
+		//- 							span Пн-вс: 10:00 - 21:00
+
+		//- 				.mich-map-address__row
+		//- 					.mich-map-address__val NailShop "ALEKSANDRA" 
+		//- 						br
+		//- 						| СПб магазин в ТЦ "Охта Молл"
+
+		//- 					.mich-map-address__contacs
+		//- 						a(href="tel:+79967692700").mich-map-address__phone.mich-link-menu +7 (996) 769-27-00
+		//- 						span.mich-map-address__schedule
+		//- 							span.mich-icomoon-icon-brown.icon-time
+		//- 							span Пн-вс: 10:00 - 21:00
+
+		//- 		.mich-map-block-sm
+		//- 			a(href="#").button.button-full.map-disclose Раскрыть карту
+		//- 				span.disclose-icon.icon-expand
+		//- 			#mich-map-sm.mich-sm-map
 		
 		.wrapper.mich-contacts
 			.mich-contacts__column.mich-contacts__column--addr

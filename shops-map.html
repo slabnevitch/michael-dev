@@ -88,49 +88,51 @@
             </form>
           </div>
           <div class="wrapper">
-            <div class="mich-mapview-handlers"><a href="#" class="mich-mapview-handler"><span class="mich-iconed-link icon-loc mich-icomoon-icon"></span><span class="mich-link">На карте</span></a><a href="#" class="mich-mapview-handler"><span class="mich-iconed-link icon-settings mich-icomoon-icon"></span><span class="mich-link">Списком</span></a></div>
+            <div class="mich-mapview-handlers"><a href="#" id="map-open" class="mich-mapview-handler"><span class="mich-iconed-link icon-loc mich-icomoon-icon"></span><span class="mich-link">На карте</span></a><a href="#" id="text-open" class="mich-mapview-handler"><span class="mich-iconed-link icon-settings mich-icomoon-icon"></span><span class="mich-link">Списком</span></a></div>
           </div>
-          <div id="mich-map-big" class="mich-big-map"></div>
-          <div class="mich-map-locs">
-            <div class="wrapper">
-              <div class="mich-map-address">
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб пр-т Большевиков, д.3, кор.1 </div>
-                  <div class="mich-map-address__contacs"><a href="tel:+79523685100" class="mich-map-address__phone mich-link-menu">+7 (952) 368-51-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+          <div class="mich-map">
+            <div class="wrapper mich-map__button-wrap">
+              <div class="button button-full map-disclose"><span class="map-disclose__text">Показать списком</span><span class="disclose-icon icon-contract"></span></div>
+            </div>
+            <div class="mich-map-locs">
+              <div class="wrapper">
+                <div class="mich-map-address">
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб пр-т Большевиков, д.3, кор.1 </div>
+                    <div class="mich-map-address__contacs"><a href="tel:+79523685100" class="mich-map-address__phone mich-link-menu">+7 (952) 368-51-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПБ мкр.Славянка, ул.Ростовская 21К1</div>
+                    <div class="mich-map-address__contacs"><a href="tel:79500383392" class="mich-map-address__phone mich-link-menu">+7 (950) 038-33-92</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб Лиговский пр-т 74</div>
+                    <div class="mich-map-address__contacs"><a href="tel:+79967692701" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-01</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб магазин в ТЦ "Охта Молл"</div>
+                    <div class="mich-map-address__contacs"><a href="tel:+79967692700" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб пр-т Большевиков, д.3, кор.1 </div>
+                    <div class="mich-map-address__contacs"><a href="tel:+79523685100" class="mich-map-address__phone mich-link-menu">+7 (952) 368-51-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПБ мкр.Славянка, ул.Ростовская 21К1</div>
+                    <div class="mich-map-address__contacs"><a href="tel:79500383392" class="mich-map-address__phone mich-link-menu">+7 (950) 038-33-92</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб Лиговский пр-т 74</div>
+                    <div class="mich-map-address__contacs"><a href="tel:+79967692701" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-01</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
+                  <div class="mich-map-address__row">
+                    <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб магазин в ТЦ "Охта Молл"</div>
+                    <div class="mich-map-address__contacs"><a href="tel:+79967692700" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
+                  </div>
                 </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПБ мкр.Славянка, ул.Ростовская 21К1</div>
-                  <div class="mich-map-address__contacs"><a href="tel:79500383392" class="mich-map-address__phone mich-link-menu">+7 (950) 038-33-92</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб Лиговский пр-т 74</div>
-                  <div class="mich-map-address__contacs"><a href="tel:+79967692701" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-01</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб магазин в ТЦ "Охта Молл"</div>
-                  <div class="mich-map-address__contacs"><a href="tel:+79967692700" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб пр-т Большевиков, д.3, кор.1 </div>
-                  <div class="mich-map-address__contacs"><a href="tel:+79523685100" class="mich-map-address__phone mich-link-menu">+7 (952) 368-51-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПБ мкр.Славянка, ул.Ростовская 21К1</div>
-                  <div class="mich-map-address__contacs"><a href="tel:79500383392" class="mich-map-address__phone mich-link-menu">+7 (950) 038-33-92</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб Лиговский пр-т 74</div>
-                  <div class="mich-map-address__contacs"><a href="tel:+79967692701" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-01</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-                <div class="mich-map-address__row">
-                  <div class="mich-map-address__val">NailShop "ALEKSANDRA" <br>СПб магазин в ТЦ "Охта Молл"</div>
-                  <div class="mich-map-address__contacs"><a href="tel:+79967692700" class="mich-map-address__phone mich-link-menu">+7 (996) 769-27-00</a><span class="mich-map-address__schedule"><span class="mich-icomoon-icon-brown icon-time"></span><span>Пн-вс: 10:00 - 21:00</span></span></div>
-                </div>
-              </div>
-              <div class="mich-map-block-sm"><a href="#" class="button button-full map-disclose">Раскрыть карту<span class="disclose-icon icon-expand"></span></a>
-                <div id="mich-map-sm" class="mich-sm-map"></div>
               </div>
             </div>
+            <div id="mich-map-big" class="mich-big-map"></div>
           </div>
           <div class="wrapper">
             <div class="shops-map__fantom">

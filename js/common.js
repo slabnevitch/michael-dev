@@ -7,7 +7,16 @@ jQuery(function() {
 		// end superfish
 
 		// slick
-			$('.main-slider__carousel').slick({});
+			$('.main-slider__carousel').slick({
+				autoplay: true
+			});
+
+			$('.partners-content').slick({
+				slidesToShow: 4,
+				autoplay: true,
+				autoplaySpeed: 4000
+
+			});
 
 			$('.product-slider').on('init', function(event, slick, direction){
 				
@@ -52,7 +61,7 @@ jQuery(function() {
 		});
 		// end selectmenu
 	
-	});
+	});/* end DOCUMENT READY*/
 
 	// tabs
 		var $tabs = $('.tabs__link');
@@ -135,7 +144,84 @@ jQuery(function() {
 		});
 	// end slideout
 
+	// map-text display
+		 function mapTextDisplay(){
+			var _self = this,
+					mapContainer = document.querySelector('.mich-map'),
+					textToggleButton = mapContainer.querySelector('.map-disclose'),
+					tabsButtons = document.querySelectorAll('.mich-mapview-handler'),
+					tabsHandlers = document.querySelector('.mich-mapview-handlers');
+			
+			this.init = function() {
+				this.binds();
+			},
+
+			this.binds = function() {
+				textToggleButton.addEventListener('click', this.buttonListener);
+				
+				[].forEach.call(tabsButtons, function(item, i) {
+					console.log('foreach');
+					item.addEventListener('click', _self.tabsListener);
+				});
+			},
+
+			this.buttonListener = function(e) {
+				_self.textToggle();
+				_self.textToggleButtonStatus();
+
+			}
+
+			this.tabsListener = function(e) {
+				e.preventDefault();
+
+				if(this.getAttribute('id') === 'text-open'){
+					if(!mapContainer.classList.contains('trans')){
+						_self.textToggleButtonStatus();
+					} 
+						_self.textShow()
+				}else{
+					 if(mapContainer.classList.contains('trans')){
+						_self.textToggleButtonStatus();
+					} 
+					 _self.textHide();
+				}
+
+			}
+
+			this.textToggleButtonStatus = function() {
+				var thisSpan = textToggleButton.querySelector('.map-disclose__text'),
+						thisIcon = textToggleButton.querySelector('.icon-expand');
+
+				textToggleButton.classList.toggle('contracted');
+
+				if(thisSpan.textContent == 'Показать списком'){
+					thisSpan.textContent = 'Раскрыть карту';
+				}else{
+					thisSpan.textContent = 'Показать списком';
+				}
+			}
+
+			this.textToggle = function() {	
+				mapContainer.classList.toggle('trans');
+				tabsHandlers.classList.toggle('list-opened');
+			}
+
+			this.textShow = function(e) {
+				mapContainer.classList.add('trans');
+				tabsHandlers.classList.add('list-opened');
+			}
+			this.textHide = function() {
+				mapContainer.classList.remove('trans');
+				tabsHandlers.classList.remove('list-opened');
+			}
+		}
+
+		if(document.querySelectorAll('.mich-map').length > 0){
+			var mapTextDisplaySample = new mapTextDisplay();
+			mapTextDisplaySample.init();
+		}
 	
+	// end map-text display
 
 	//Chrome Smooth Scroll
 	try {

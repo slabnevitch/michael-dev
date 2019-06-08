@@ -15,13 +15,15 @@ block content
 		.wrapper
 			h2.wrapped Наши партнеры
 		
-		.wrapper.partners-content
-			.partners-item
-				img(src="img/logos/ozon.png", alt="alt")
-			.partners-item
-				img(src="img/logos/parisnail.png", alt="alt")
-			.partners-item
-				img(src="img/logos/logo-wildberries.png", alt="alt")
-			.partners-item
-				img(src="img/logos/krasotkapro-logo.png", alt="alt")
+		.wrapper
+			.partners-content
+				- for (var i=0; i < 2; i++)
+					.partners-item
+						img(src="img/logos/ozon.png", alt="alt")
+					.partners-item
+						img(src="img/logos/parisnail.png", alt="alt")
+					.partners-item
+						img(src="img/logos/logo-wildberries.png", alt="alt")
+					.partners-item
+						img(src="img/logos/krasotkapro-logo.png", alt="alt")
 
