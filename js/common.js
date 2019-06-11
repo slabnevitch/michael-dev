@@ -79,8 +79,7 @@ jQuery(function() {
 					.siblings()
 					.removeClass('tabs__item--active');
 
-			console.log(tab);
-							
+									
 			$tabsContent.find('[data-tab='+tab+']')
 					.removeClass('hidden')
 					.siblings()
@@ -160,7 +159,6 @@ jQuery(function() {
 				textToggleButton.addEventListener('click', this.buttonListener);
 				
 				[].forEach.call(tabsButtons, function(item, i) {
-					console.log('foreach');
 					item.addEventListener('click', _self.tabsListener);
 				});
 			},
