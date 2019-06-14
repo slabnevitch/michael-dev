@@ -31,10 +31,31 @@ body{
     height: 100%;
   }
 }
-// .mich-main__inner{
-//   height: 100%;
-//   flex: 1 0 auto;
-// }
+
+.slideout-menu{
+  z-index: 2;
+  background-color: #fff;
+}
+.slideout-panel{
+  &:before{
+    content: '';
+
+    display: block;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.5s ease-in-out;
+    z-index: 0;
+  }
+
+  &.panel-open:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    // z-index: 99;
+  }
+
+}
 .wrapper{
   @include row-flex();
   @include wrapper();

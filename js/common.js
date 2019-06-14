@@ -134,12 +134,29 @@ jQuery(function() {
 			'tolerance': 70
 		});
 
-		// document.querySelector('.toggle').addEventListener('click', function() {
-		// 	slideout.toggle();
-		// });
+		document.querySelector('.toggle').addEventListener('click', function() {
+			slideout.toggle();
+		});
 
 		document.querySelector('nav').addEventListener('click', function(eve) {
 			if (eve.target.nodeName === 'A') { slideout.close(); }
+		});
+
+		function close(eve) {
+			eve.preventDefault();
+			slideout.close();
+		}
+
+		slideout
+		.on('beforeopen', function() {
+			this.panel.classList.add('panel-open');
+		})
+		.on('open', function() {
+			this.panel.addEventListener('click', close);
+		})
+		.on('beforeclose', function() {
+			this.panel.classList.remove('panel-open');
+			this.panel.removeEventListener('click', close);
 		});
 	// end slideout
 

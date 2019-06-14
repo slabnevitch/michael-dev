@@ -3080,6 +3080,25 @@ body {
     display: table-row;
     height: 100%; }
 
+.slideout-menu {
+  z-index: 2;
+  background-color: #fff; }
+
+.slideout-panel:before {
+  content: '';
+  display: block;
+  background-color: transparent;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  z-index: 0; }
+
+.slideout-panel.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); }
+
 .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3694,6 +3713,11 @@ ul, li {
   font-size: 16px; }
   .quick-view-info__bottom .product-info__share .mich-icomoon-icon:before {
     color: #49BAAE; }
+
+.header {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; }
 
 .header-top {
   border-bottom: 1px solid rgba(106, 79, 53, 0.2); }
