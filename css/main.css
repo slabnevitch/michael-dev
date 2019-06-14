@@ -3081,6 +3081,7 @@ body {
     height: 100%; }
 
 .slideout-menu {
+  top: 250px;
   z-index: 2;
   background-color: #fff; }
 
@@ -3090,7 +3091,7 @@ body {
   background-color: transparent;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
-  z-index: 0; }
+  z-index: 1; }
 
 .slideout-panel.panel-open:before {
   position: absolute;
@@ -3173,12 +3174,33 @@ h1, h2 {
     width: calc(100% - 20px); }
 
 h1 {
-  font-size: 1.71429rem;
-  line-height: 2.28571rem; }
+  font-size: 24px;
+  line-height: 32px; }
 
 h2 {
-  font-size: 1.28571rem;
-  line-height: 1.71429rem; }
+  font-size: 18px;
+  line-height: 24px; }
+
+.mob-subscribe {
+  display: none;
+  padding-top: 11px;
+  border-top: 1px solid rgba(106, 79, 53, 0.2); }
+
+.mob-subscr-container .mich-form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px); }
+  .mob-subscr-container .mich-form div:first-child {
+    margin-bottom: 10px;
+    text-align: center; }
+  .mob-subscr-container .mich-form .mich-form-input {
+    text-align: center; }
+  .mob-subscr-container .mich-form .mich-form__policy {
+    padding-left: 30px; }
 
 input,
 textarea {
@@ -3267,6 +3289,41 @@ ul, li {
     margin-right: 12px; }
   .icon-link-block span {
     vertical-align: middle; }
+
+.toggle-mnu {
+  display: block;
+  width: 20px;
+  height: 20px; }
+  .toggle-mnu span:after, .toggle-mnu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px; }
+  .toggle-mnu span:after {
+    top: 12px; }
+  .toggle-mnu span {
+    position: relative;
+    display: block; }
+  .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+    width: 100%;
+    height: 2px;
+    background-color: #49BAAE;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+  .toggle-mnu.on span {
+    background-color: transparent; }
+  .toggle-mnu.on span:before {
+    -webkit-transform: rotate(45deg) translate(-3px, 0px);
+    -ms-transform: rotate(45deg) translate(-3px, 0px);
+    transform: rotate(45deg) translate(-3px, 0px); }
+  .toggle-mnu.on span:after {
+    -webkit-transform: rotate(-45deg) translate(5px, -7px);
+    -ms-transform: rotate(-45deg) translate(5px, -7px);
+    transform: rotate(-45deg) translate(5px, -7px); }
 
 .hidden {
   display: none; }
@@ -3718,6 +3775,8 @@ ul, li {
   position: relative;
   z-index: 10;
   background-color: #fff; }
+  .header .toggle-mnu {
+    display: none; }
 
 .header-top {
   border-bottom: 1px solid rgba(106, 79, 53, 0.2); }
@@ -3745,6 +3804,10 @@ ul, li {
   .header-top__right a {
     display: inline-block;
     vertical-align: middle; }
+  .header-top__right .icon-mag {
+    display: none; }
+    .header-top__right .icon-mag:before {
+      color: #49BAAE; }
 
 .header-top__where {
   margin-right: 20px;
@@ -3800,6 +3863,10 @@ ul, li {
   width: calc(66.66667% - 20px);
   padding-top: 11px;
   padding-bottom: 11px; }
+  @media screen and (max-width: 980px) {
+    .header-bottom__inner {
+      width: -webkit-calc(83.33333% - 20px);
+      width: calc(83.33333% - 20px); } }
   .header-bottom__inner .mich-form .mich-form-input--search {
     border-top: none;
     border-left: none;
@@ -3847,7 +3914,7 @@ ul, li {
     color: #6A4F35; }
 
 .main-slider {
-  margin-bottom: 30px; }
+  margin-bottom: 2.14286rem; }
 
 .main-slider__carousel {
   width: 100%; }
@@ -4588,6 +4655,13 @@ span.blog-preview__date {
   width: -webkit-calc(16.66667% - 20px);
   width: calc(16.66667% - 20px);
   margin-bottom: 33px; }
+  @media screen and (max-width: 980px) {
+    .footer-contacts {
+      width: -webkit-calc(100% - 20px);
+      width: calc(100% - 20px); } }
+
+.footer-logo img {
+  max-width: 100%; }
 
 .footer-menu {
   -webkit-box-sizing: border-box;
@@ -4610,10 +4684,21 @@ span.blog-preview__date {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 1200px) {
+    .footer-menu {
+      width: -webkit-calc(83.33333% - 20px);
+      width: calc(83.33333% - 20px); } }
+  @media screen and (max-width: 980px) {
+    .footer-menu {
+      width: -webkit-calc(100% - 20px);
+      width: calc(100% - 20px); } }
   .footer-menu li {
     list-style-type: none; }
     .footer-menu li ul li a {
       font-size: 12px; }
+
+.footer-mob-data {
+  display: none; }
 
 .footer-bottom {
   padding: 10px 0;
@@ -4643,17 +4728,57 @@ span.blog-preview__date {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  html {
+    font-size: 13px; }
+  .main-slider .wrapper-no-flex {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  /**/
+  html {
+    font-size: 12px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px; }
+  .header-bottom {
+    display: none; }
+  .header .toggle-mnu {
+    display: block;
+    margin-right: 15px; }
+  .header-logo {
+    max-width: 124px; }
+    .header-logo img {
+      max-width: 100%; }
+  .header-top {
+    border-bottom: none; }
+    .header-top .button {
+      display: none; }
+  .header-top .wrapper {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-top: 18px;
+    padding-bottom: 18px; }
+  .header-top__right {
+    margin-left: auto; }
+  .slideout-menu {
+    top: 64px; }
+  .main-slider__slide {
+    padding-bottom: 0;
+    height: 250px; }
   /*Disable Animation on Mobile Devices*/ }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 8px; } }
+
 @media only screen and (max-width: 480px) {
   /**/ }
 

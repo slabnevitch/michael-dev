@@ -15,12 +15,20 @@
 .footer-contacts{
 	@include col();
 	@include col-2();
+	@include col-md-12();
 
 	margin-bottom: 33px;
+}
+.footer-logo{
+	img{
+		max-width: 100%;
+	}
 }
 .footer-menu{
 	@include col();
 	@include col-9();
+	@include col-lg_1200-10();
+	@include col-md-12();
 	padding-left: 22px;
 	margin-bottom: 33px;
 
@@ -42,6 +50,9 @@
 			}
 		}
 	}
+}
+.footer-mob-data{
+	display: none;
 }
 .footer-bottom{
 	padding: 10px 0;

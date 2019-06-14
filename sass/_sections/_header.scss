@@ -2,6 +2,10 @@
 	position: relative;
 	z-index: 10;
 	background-color: #fff;
+
+	.toggle-mnu{
+		display: none;
+	}
 }
 .header-top{
 	border-bottom: 1px solid $gray-line;
@@ -23,6 +27,13 @@
 	a{
 		display: inline-block;
 		vertical-align: middle;
+	}
+	.icon-mag{
+		display: none;
+
+		&:before{
+			color: $accent;
+		}
 	}
 }
 .header-top__where{
@@ -78,6 +89,7 @@
 	position: relative;
 	@include col();
 	@include col-8();
+	@include col-md-10();
 	padding-top: 11px;
 	padding-bottom: 11px;
 

@@ -14,9 +14,28 @@ jQuery(function() {
 			$('.partners-content').slick({
 				slidesToShow: 4,
 				autoplay: true,
-				autoplaySpeed: 4000
+				autoplaySpeed: 4000,
+				responsive: [
+
+				{
+					breakpoint: 981,
+					settings: {
+
+						slidesToShow: 3
+
+					}	
+				},
+				{
+					breakpoint: 769,
+					settings: {
+
+						slidesToShow: 2
+					}	
+				}
+				]
 
 			});
+			
 
 			$('.product-slider').on('init', function(event, slick, direction){
 				
@@ -126,6 +145,14 @@ jQuery(function() {
 		});
 
 	// end header search toggle
+
+	// mobile menu toggle
+		$(".toggle-mnu").click(function() {
+			$(this).toggleClass("on");
+			return false;
+		});
+	// end mobile menu toggle
+
 	// slideout
 	var slideout = new Slideout({
 			'panel': document.querySelector('.mich-main'),
@@ -134,11 +161,11 @@ jQuery(function() {
 			'tolerance': 70
 		});
 
-		document.querySelector('.toggle').addEventListener('click', function() {
+		document.querySelector('.header .toggle-mnu').addEventListener('click', function() {
 			slideout.toggle();
 		});
 
-		document.querySelector('nav').addEventListener('click', function(eve) {
+		document.querySelector('.mich-mob-nav').addEventListener('click', function(eve) {
 			if (eve.target.nodeName === 'A') { slideout.close(); }
 		});
 
@@ -153,10 +180,14 @@ jQuery(function() {
 		})
 		.on('open', function() {
 			this.panel.addEventListener('click', close);
+			document.querySelector('.header .toggle-mnu')
+				.classList.add('on');
 		})
 		.on('beforeclose', function() {
 			this.panel.classList.remove('panel-open');
 			this.panel.removeEventListener('click', close);
+			document.querySelector('.header .toggle-mnu')
+				.classList.remove('on');
 		});
 	// end slideout
 
