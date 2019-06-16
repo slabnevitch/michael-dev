@@ -4730,6 +4730,8 @@ span.blog-preview__date {
 
 .footer-mob-data {
   display: none; }
+  .footer-mob-data p {
+    margin-bottom: 20px; }
 
 .footer-bottom {
   padding: 10px 0;
@@ -4815,6 +4817,37 @@ span.blog-preview__date {
     margin-right: 15px; }
     .header-top__right .iconed-link:last-child {
       margin-right: 0; }
+  .mob-subscribe {
+    display: block; }
+  .footer-menu {
+    padding-left: 0;
+    margin-bottom: 15px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 100%; }
+    .footer-menu > li {
+      margin-bottom: 9px;
+      margin-left: 10px;
+      margin-right: 10px; }
+  .footer-contacts {
+    display: none; }
+  .footer-bottom .button,
+  .footer-bottom .footer-socials {
+    display: none; }
+  .footer-bottom .wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .footer-mob-data {
+    display: block;
+    width: 100%;
+    text-align: center; }
+    .footer-mob-data .footer-socials {
+      display: inline-block; }
   /*Disable Animation on Mobile Devices*/ }
 
 /* Extra Small Devices, Phones */
@@ -4824,17 +4857,53 @@ span.blog-preview__date {
   .wrapper {
     padding-right: 15px;
     padding-left: 15px; }
+  .no-pd-560 {
+    padding-left: 0;
+    padding-right: 0; }
+  .mob-subscr-container .mich-form {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
   .slick-prev {
     left: 15px; }
   .slick-next {
     right: 15px; }
   .mob-search-form .icon-close {
-    right: 15px; } }
+    right: 15px; }
+  .partners-content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .partners-content .slick-prev {
+      left: 0; }
+    .partners-content .slick-next {
+      right: 0; }
+  .partners-item img {
+    max-width: 60%; }
+  .footer-menu {
+    margin-left: 0;
+    margin-right: 0; }
+    .footer-menu li ul {
+      display: none; }
+  .footer-bottom {
+    padding: 14px 0; } }
 
 @media only screen and (max-width: 480px) {
-  /**/ }
+  /**/
+  .main-slider {
+    margin-bottom: 0; } }
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 375px) {
+  .footer-menu li {
+    margin-left: 5px;
+    margin-right: 5px; }
+    .footer-menu li.go-distributor {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1; } }
+
 @media only screen and (max-width: 320px) {
   /**/ }
 
