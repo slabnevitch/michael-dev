@@ -4,9 +4,10 @@ block title
 	| Shops map
 
 block content
-	section.shops-map
+	section.shops-map.sect-titled-mob
 		.wrapper
-			h1.wrapped Купить продукцию D’Michael у наших партнёров в своём городе
+			h1.wrapped.title-desktop Купить продукцию D’Michael у наших партнёров в своём городе
+		h1.title-mobile Где купить?
 		
 		.wrapper.shops-map__search.mich-search-wide
 			form.mich-form(action="#")
@@ -25,7 +26,14 @@ block content
 				a(href="#" id="text-open").mich-mapview-handler
 					span.mich-iconed-link.icon-settings.mich-icomoon-icon
 					span.mich-link Списком
+		
+		.wrapper.shops-map__search.mich-search-wide.mich-search-wide--mob
+			form.mich-form(action="#")
+				label.mich-form-label
+					input.mich-form-input.mich-form-input--search(type="text", name="" placeholder="Поиск")
 
+					button.search-button
+						span.icon-mag
 		.mich-map
 			.wrapper.mich-map__button-wrap
 				.button.button-full.map-disclose

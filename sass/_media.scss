@@ -14,13 +14,41 @@
 			padding-right: 0;
 		}
 	}
+	.mich-map-address__row{
+		display: block;
+	}
+	.mich-map.trans .mich-big-map{
+		transform: translateX(calc(48.33333% + 37px));
+	}
+	.mich-map-address__val{
+		margin-bottom: 5px;
+	}
+
 }
 	
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px){
+}
+
 @media only screen and (max-width : 992px){
 /**/html{
 		font-size: 12px;
 	}
+	.mich-map-address__phone:before{
+		width: 18px;
+		height: 18px;
+	}
+	.mich-map-address__phone{
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	.mich-map-address__contacs{
+		.mich-link-menu{
+			display: block;
+		}
+	}
+
+
 }
 	
 	
@@ -124,6 +152,21 @@
 
 		.footer-socials{
 			display: inline-block;
+		}
+	}
+	.title-desktop{
+		display: none;
+	}
+	.title-mobile{
+		display: block;
+	}
+	.sect-titled-mob{
+		padding-top: 0;
+	}
+	.mich-search-wide{
+		display: none;
+		&--mob{
+			display: block;
 		}
 	}
 	/*Disable Animation on Mobile Devices*/
