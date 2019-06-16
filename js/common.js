@@ -82,6 +82,18 @@ jQuery(function() {
 	
 	});/* end DOCUMENT READY*/
 
+	// mobile search toggle
+		$('.header-top__right .icon-mag').click(function() {
+			$('.mob-search-form').fadeIn(100);
+			return false;
+		});
+
+		$('.mob-search-form .icon-close').click(function() {
+			$(this).parent().fadeOut(100);
+			return false;
+		});
+	// end mobile search toggle
+
 	// tabs
 		var $tabs = $('.tabs__link');
 

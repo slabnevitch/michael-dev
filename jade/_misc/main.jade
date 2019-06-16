@@ -18,29 +18,7 @@ html(lang='ru')
 	body(data-slideout-ignore)
 		include _mixins
 
-		nav.mich-mob-nav
-			ul.header-mob-menu
-				li
-					a(href="#").mich-link-menu О бренде
-				li
-					a(href="#").mich-link-menu Каталог продукции
-					ul
-						li
-							a(href="#").mich-link-menu.header-menu__sublink Уход за руками и телом
-						li
-							a(href="#").mich-link-menu.header-menu__sublink Уход за волосами
-				li
-					a(href="#").mich-link-menu Блог
-					ul
-						li
-							a(href="#").mich-link-menu.header-menu__sublink Вопросы и Ответы
-						li
-							a(href="#").mich-link-menu.header-menu__sublink Новости D’Michael
-						li
-							a(href="#").mich-link-menu.header-menu__sublink “Дайте мне красоты!”
-
-				li
-					a(href="#").mich-link-menu Контакты
+		include ../_includes/mob-menu
 
 		main.mich-main
 			.mich-main__inner
