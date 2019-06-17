@@ -26,11 +26,16 @@
 	}
 	&--mob{
 		display: none;
+
+		.mich-form .mich-form-label{
+			margin-bottom: 0;
+		}
 	}
 }
 .mich-map{
 	position: relative;
 	height: 500px;
+	min-height: 500px;
 	// max-height: 500px;
 	overflow: hidden;
 	border-top: 1px solid $gray-line;
@@ -61,6 +66,7 @@
 	@include col();
 	@include col-7();
 	@include col-lg_1200-6();
+	@include col-mdr-12();
 	padding-top: 20px;
 	background-color: #fff;
 }

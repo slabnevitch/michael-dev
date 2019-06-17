@@ -47,8 +47,41 @@
 			display: block;
 		}
 	}
+	.mich-map.trans .mich-big-map{
+		transform: translateX(0);
+	}
+	.mich-map.trans .mich-map-locs{
+		position: relative;
+		z-index: 1;
+		background-color: #fff;
+	}
+	.mich-map-address__row{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.mich-map-address__contacs .mich-link-menu{
+		display: inline-block;
+	}
+	.mich-map-address__phone{
+		margin-right: 30px;
+	}
+	.mich-map.trans{
 
-
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			// z-index: 1;
+		}
+	}
 }
 	
 	
@@ -169,6 +202,41 @@
 			display: block;
 		}
 	}
+	.mich-map-address__row{
+		display: block;
+	}
+	.mich-map-address__val{
+		margin-bottom: 5px;
+	}
+	.mapview-handlers-container{
+		margin-bottom: 9px;
+		border-bottom: 1px solid $gray-line;
+	}
+	.mich-mapview-handlers{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-bottom: 0;
+	}
+
+	.mich-mapview-handler{
+		width: 50%;
+		padding-top: 7px;
+		padding-bottom: 6px;
+		text-align: center;
+		border-left: 1px solid $gray-line;
+
+		&:first-child{
+			border-left: none;
+		}
+
+	}
+
+	.mich-map{
+		border-top: none;
+	}
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
 
@@ -253,12 +321,32 @@
 	.footer-bottom{
 		padding: 14px 0;
 	}
+	.map-disclose{
+		padding: 0;
+		width: 40px;
+		height: 40px;
+
+		.disclose-icon{
+			left: 50%;
+			margin-left: -10px;
+			
+		}
+	}
+	.map-disclose__text{
+		display: none;
+	}
 }
 
 @media only screen and (max-width : 480px){
 /**/
 	.main-slider{
 		margin-bottom: 0;
+	}
+	.mich-map-address__contacs{
+		.mich-link-menu{
+			display: block;
+
+		}
 	}
 }
 		

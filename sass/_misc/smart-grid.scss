@@ -5,6 +5,8 @@ $atom: (100% / $columns);
 
 $break_lg_1280: 1280px;
 $break_lg_1200: 1200px;
+$break_lg: 1100px;
+$break_mdr: 992px;
 $break_md: 980px;
 $break_mdd: 960px;
 $break_sm: 768px;
@@ -72,6 +74,16 @@ $break_xxs: 480px;
     }
 
     @media screen and (max-width: $break_lg_1200){
+        padding-left: undefined;
+        padding-right: undefined;
+    }
+
+    @media screen and (max-width: $break_lg){
+        padding-left: undefined;
+        padding-right: undefined;
+    }
+
+    @media screen and (max-width: $break_mdr){
         padding-left: undefined;
         padding-right: undefined;
     }
@@ -538,6 +550,316 @@ $break_xxs: 480px;
 }
 @mixin lg_1200-block(){
     @media screen and (max-width: $break_lg_1200){
+        @content;
+    }
+}
+@mixin size-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        width: #{calc(#{$value} - #{$offset})};
+    }
+}
+@mixin col-lg-1(){
+    @include size-lg(1);
+}
+@mixin col-lg-2(){
+    @include size-lg(2);
+}
+@mixin col-lg-3(){
+    @include size-lg(3);
+}
+@mixin col-lg-4(){
+    @include size-lg(4);
+}
+@mixin col-lg-5(){
+    @include size-lg(5);
+}
+@mixin col-lg-6(){
+    @include size-lg(6);
+}
+@mixin col-lg-7(){
+    @include size-lg(7);
+}
+@mixin col-lg-8(){
+    @include size-lg(8);
+}
+@mixin col-lg-9(){
+    @include size-lg(9);
+}
+@mixin col-lg-10(){
+    @include size-lg(10);
+}
+@mixin col-lg-11(){
+    @include size-lg(11);
+}
+@mixin col-lg-12(){
+    @include size-lg(12);
+}
+@mixin offset-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        margin-left: #{calc(#{$value} + #{$offset_one_side})};
+        margin-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-left-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        margin-left: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-right-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        margin-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-padding-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        padding-left: #{calc(#{$value} + #{$offset_one_side})};
+        padding-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-left-padding-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        padding-left: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-right-padding-lg($n){
+    @media screen and (max-width: $break_lg){
+        $value: $atom * $n;
+        padding-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin justify-content-lg($value){
+    @media screen and (max-width: $break_lg){
+        justify-content: $value;
+    }
+}
+@mixin align-items-lg($value){
+    @media screen and (max-width: $break_lg){
+        align-items: $value;
+    }
+}
+@mixin align-content-lg($value){
+    @media screen and (max-width: $break_lg){
+        align-content: $value;
+    }
+}
+@mixin align-self-lg($value){
+    @media screen and (max-width: $break_lg){
+        align-self: $value;
+    }
+}
+@mixin order-lg($value){
+    @media screen and (max-width: $break_lg){
+        order: $value;
+    }
+}
+@mixin flex-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex: $value;
+    }
+}
+@mixin flex-grow-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex-grow: $value;
+    }
+}
+@mixin flex-shrink-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex-shrink: $value;
+    }
+}
+@mixin flex-basis-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex-basis: $value;
+    }
+}
+@mixin flex-direction-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex-direction: $value;
+    }
+}
+@mixin flex-wrap-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex-wrap: $value;
+    }
+}
+@mixin flex-flow-lg($value){
+    @media screen and (max-width: $break_lg){
+        flex-flow: $value;
+    }
+}
+@mixin float-lg($value){
+    @media screen and (max-width: $break_lg){
+        float: $value;
+    }
+}
+@mixin lg($name, $value){
+    @media screen and (max-width: $break_lg){
+        #{$name}: $value;
+    }
+}
+@mixin lg-block(){
+    @media screen and (max-width: $break_lg){
+        @content;
+    }
+}
+@mixin size-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        width: #{calc(#{$value} - #{$offset})};
+    }
+}
+@mixin col-mdr-1(){
+    @include size-mdr(1);
+}
+@mixin col-mdr-2(){
+    @include size-mdr(2);
+}
+@mixin col-mdr-3(){
+    @include size-mdr(3);
+}
+@mixin col-mdr-4(){
+    @include size-mdr(4);
+}
+@mixin col-mdr-5(){
+    @include size-mdr(5);
+}
+@mixin col-mdr-6(){
+    @include size-mdr(6);
+}
+@mixin col-mdr-7(){
+    @include size-mdr(7);
+}
+@mixin col-mdr-8(){
+    @include size-mdr(8);
+}
+@mixin col-mdr-9(){
+    @include size-mdr(9);
+}
+@mixin col-mdr-10(){
+    @include size-mdr(10);
+}
+@mixin col-mdr-11(){
+    @include size-mdr(11);
+}
+@mixin col-mdr-12(){
+    @include size-mdr(12);
+}
+@mixin offset-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        margin-left: #{calc(#{$value} + #{$offset_one_side})};
+        margin-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-left-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        margin-left: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-right-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        margin-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-padding-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        padding-left: #{calc(#{$value} + #{$offset_one_side})};
+        padding-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-left-padding-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        padding-left: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin offset-right-padding-mdr($n){
+    @media screen and (max-width: $break_mdr){
+        $value: $atom * $n;
+        padding-right: #{calc(#{$value} + #{$offset_one_side})};
+    }
+}
+@mixin justify-content-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        justify-content: $value;
+    }
+}
+@mixin align-items-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        align-items: $value;
+    }
+}
+@mixin align-content-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        align-content: $value;
+    }
+}
+@mixin align-self-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        align-self: $value;
+    }
+}
+@mixin order-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        order: $value;
+    }
+}
+@mixin flex-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex: $value;
+    }
+}
+@mixin flex-grow-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex-grow: $value;
+    }
+}
+@mixin flex-shrink-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex-shrink: $value;
+    }
+}
+@mixin flex-basis-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex-basis: $value;
+    }
+}
+@mixin flex-direction-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex-direction: $value;
+    }
+}
+@mixin flex-wrap-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex-wrap: $value;
+    }
+}
+@mixin flex-flow-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        flex-flow: $value;
+    }
+}
+@mixin float-mdr($value){
+    @media screen and (max-width: $break_mdr){
+        float: $value;
+    }
+}
+@mixin mdr($name, $value){
+    @media screen and (max-width: $break_mdr){
+        #{$name}: $value;
+    }
+}
+@mixin mdr-block(){
+    @media screen and (max-width: $break_mdr){
         @content;
     }
 }
