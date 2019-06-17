@@ -2,7 +2,7 @@
 	padding-top: rem(30px);
 }
 .faq-list{
-	margin-bottom: rem(49);
+	margin-bottom: rem(100);
 }
 .faq-item{
 	justify-content: flex-end;
@@ -13,6 +13,9 @@
 	&__row{
 		@include col();
 		@include col-9();
+		@include col-lg-10();
+		@include col-md-11();
+		@include col-sm-12();
 	}
 	.acordeon-sublist{
 		.acordeon-subitem{
@@ -60,4 +63,18 @@
 	width: 22px;
 	height: 22px;
 	background-image: url(../img/icons-svg/faq-plus.svg);
+}
+.faq-info{
+	display: none;
+	@include col();
+	@include col-12();
+}
+.faq-info__item{
+	margin-bottom: 24px;
+	font-family: $r-r;
+
+	a{
+		display: block;
+		color: $accent;
+	}
 }

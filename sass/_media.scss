@@ -114,6 +114,14 @@
 	html{
 		font-size: 10px;
 	}
+	h1.to-mobile{
+	  padding: 7px 15px;
+	  margin-bottom: 0;
+	  font-size: 18px;
+	  line-height: 24px;
+	  border-bottom: 1px solid $gray-line;
+	  border-top: 1px solid $gray-line;
+	}
 	.mich-section{
 		padding-top: 0;
 	}
@@ -345,6 +353,20 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+	.faq-item{
+		justify-content: flex-start;
+
+		&:first-child{
+			border-top: none;
+		}
+
+	}
+	.faq-info{
+		display: block;
+	}
+	.faq-list{
+		margin-bottom: 30px;
+	}
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
 
@@ -463,7 +485,26 @@
 	.wishes-content{
 		width: 100%;
 	}
-	
+	.faq-item__row{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.faq-link{
+		position: relative;
+		display: block;
+		padding-left: 25px;
+		font-size: 14px;
+	}
+	.faq-icon{
+		width: 18px;
+		height: 18px;
+		@include absolute-center-old;
+		right: auto;
+		left: 0;
+	}
+
+
 }
 
 @media only screen and (max-width : 480px){
