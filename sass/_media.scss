@@ -114,7 +114,7 @@
 	html{
 		font-size: 10px;
 	}
-	h1.to-mobile{
+	.to-mobile{
 	  padding: 7px 15px;
 	  margin-bottom: 0;
 	  font-size: 18px;
@@ -367,6 +367,19 @@
 	.faq-list{
 		margin-bottom: 30px;
 	}
+	.mich-article__content{
+		padding-top: 15px;
+	}
+	.mich-article__content h2{
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.mich-article__content p{
+		line-height: 16px;
+		color: rgba(#000, .5);
+		font-family: $r-r;
+	}
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
 
@@ -485,7 +498,8 @@
 	.wishes-content{
 		width: 100%;
 	}
-	.faq-item__row{
+	.faq-item__row,
+	.mich-article__content{
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
@@ -503,7 +517,10 @@
 		right: auto;
 		left: 0;
 	}
-
+	.mich-article__img{
+		padding-bottom: 0;
+		height: 180px;
+	}
 
 }
 

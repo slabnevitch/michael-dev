@@ -1,3 +1,8 @@
+.mich-article{
+	.title-mobile{
+		margin-bottom: 19px;
+	}
+}
 .mich-article__wrapper{
 	justify-content: center;
 }
@@ -11,6 +16,8 @@
 	justify-content: center;
 	@include col();
 	@include col-8();
+	@include col-md-10();
+	@include col-sm-12();
 	padding-top: 25px;
 	padding-bottom: 25px;
 

@@ -102,6 +102,11 @@ h2{
   text-align: center;
   border-bottom: 1px solid $gray-line;
   border-top: 1px solid $gray-line;
+
+  a{
+    color: $font;
+    text-decoration: none;
+  }
 }
 .mob-subscribe{
   display: none;

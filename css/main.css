@@ -3198,6 +3198,9 @@ h2 {
   text-align: center;
   border-bottom: 1px solid rgba(106, 79, 53, 0.2);
   border-top: 1px solid rgba(106, 79, 53, 0.2); }
+  .title-mobile a {
+    color: #6A4F35;
+    text-decoration: none; }
 
 .mob-subscribe {
   display: none;
@@ -4074,6 +4077,9 @@ ul, li {
     display: block;
     color: #49BAAE; }
 
+.mich-article .title-mobile {
+  margin-bottom: 19px; }
+
 .mich-article__wrapper {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -4100,6 +4106,14 @@ ul, li {
   width: calc(66.66667% - 20px);
   padding-top: 25px;
   padding-bottom: 25px; }
+  @media screen and (max-width: 980px) {
+    .mich-article__content {
+      width: -webkit-calc(83.33333% - 20px);
+      width: calc(83.33333% - 20px); } }
+  @media screen and (max-width: 768px) {
+    .mich-article__content {
+      width: -webkit-calc(100% - 20px);
+      width: calc(100% - 20px); } }
   .mich-article__content h2 {
     margin-bottom: 1.28571rem;
     font-size: 24px;
@@ -4470,6 +4484,9 @@ ul, li {
 .mich-contacts__title {
   margin-bottom: 1.42857rem;
   font-size: 18px; }
+
+.blog .title-mobile {
+  margin-bottom: 19px; }
 
 .blog-previews {
   height: 480px;
@@ -4991,7 +5008,7 @@ span.blog-preview__date {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 10px; }
-  h1.to-mobile {
+  .to-mobile {
     padding: 7px 15px;
     margin-bottom: 0;
     font-size: 18px;
@@ -5180,6 +5197,16 @@ span.blog-preview__date {
     display: block; }
   .faq-list {
     margin-bottom: 30px; }
+  .mich-article__content {
+    padding-top: 15px; }
+  .mich-article__content h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px; }
+  .mich-article__content p {
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "RobotoRegular", sans-serif; }
   /*Disable Animation on Mobile Devices*/ }
 
 /* Extra Small Devices, Phones */
@@ -5244,7 +5271,8 @@ span.blog-preview__date {
     margin-right: 0; }
   .wishes-content {
     width: 100%; }
-  .faq-item__row {
+  .faq-item__row,
+  .mich-article__content {
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
@@ -5263,7 +5291,10 @@ span.blog-preview__date {
     margin: auto;
     position: absolute;
     right: auto;
-    left: 0; } }
+    left: 0; }
+  .mich-article__img {
+    padding-bottom: 0;
+    height: 180px; } }
 
 @media only screen and (max-width: 480px) {
   /**/
