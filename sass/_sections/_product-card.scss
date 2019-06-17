@@ -32,6 +32,8 @@
 .product-dislplay{
 	@include col();
 	@include col-5();
+	@include col-md-6();
+	@include col-sm-12();
 	position: relative;
 }
 .product-dislplay__nav{
@@ -53,6 +55,8 @@
 .product-info{
 	@include col();
 	@include col-4();
+	@include col-lg-5();
+	@include col-md-6();
 	// margin-left: auto;
 }
 .product-slider{
@@ -104,6 +108,14 @@
 			color: #fff;
 		}
 	}
+
+	&--mob{
+		display: none;
+		margin-bottom: 20px;
+		 .mich-icomoon-icon:before{
+		 	color: $accent;
+		 }
+	}
 }
 .product-chars{
 	margin-bottom: 20px;
@@ -122,6 +134,8 @@
 		.tabs__content{
 			@include col();
 			@include col-6();
+			@include col-lg-10();
+			@include col-md-12();
 
 			.tabs__item{
 				font-family: $r-l;
@@ -142,5 +156,19 @@
 
 	p{
 		margin-top: 0;
+	}
+}
+.product-info-mobile{
+	display: none;
+	position: relative;
+	.product-info__title{
+		padding-right: 40px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.icon-heart-empty{
+		position: absolute;
+		top: 0;
+		right: 15px;
 	}
 }

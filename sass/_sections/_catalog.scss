@@ -24,6 +24,11 @@
 
 	@include col();
 	@include col-7();
+	@include col-lg_1200-8();
+	@include col-lg-9();
+	@include col-mdr-10();
+	@include col-md-11();
+	@include col-sm-12();
 }
 .whises{
 
