@@ -4,11 +4,15 @@
 }
 .mich-contacts__column{
 	@include col();
+	@include col-md-6();
+	@include col-xs-12();
 	// @include col-2();
 	margin-bottom: 40px;
 
 	&--co-working{
 		@include col-3();
+		@include col-md-6();
+		@include col-xs-12();
 	}
 	// &--addr{
 	// 	@include col-2();

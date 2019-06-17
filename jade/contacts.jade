@@ -4,9 +4,11 @@ block title
 	| Contacts
 
 block content
-	section
+	section.mich-section.contacts
 		.wrapper
-			h1.wrapped Контактная информация
+			h1.wrapped.title-desktop Контактная информация
+
+		.title-mobile Контакты
 		
 		.wrapper.mich-search-wide
 			form.mich-form(action="#")
@@ -16,15 +18,16 @@ block content
 					button.search-button
 						span.icon-mag
 
-		.wrapper
-			.mich-mapview-handlers
-				a(href="#" id="map-open").mich-mapview-handler
-					span.mich-iconed-link.icon-loc.mich-icomoon-icon
-					span.mich-link На карте
+		.mapview-handlers-container
+			.wrapper
+				.mich-mapview-handlers
+					a(href="#" id="map-open").mich-mapview-handler
+						span.mich-iconed-link.icon-loc.mich-icomoon-icon
+						span.mich-link На карте
 
-				a(href="#" id="text-open").mich-mapview-handler
-					span.mich-iconed-link.icon-settings.mich-icomoon-icon
-					span.mich-link Списком
+					a(href="#" id="text-open").mich-mapview-handler
+						span.mich-iconed-link.icon-settings.mich-icomoon-icon
+						span.mich-link Списком
 
 
 		.mich-map

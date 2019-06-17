@@ -44,7 +44,7 @@ body{
     display: block;
     background-color: rgba(0,0,0,0);
     transition: background-color 0.5s ease-in-out;
-    z-index: 1;
+    z-index: 10;
   }
 
   &.panel-open:before {
@@ -98,6 +98,7 @@ h2{
   margin-bottom: 0;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   border-bottom: 1px solid $gray-line;
   border-top: 1px solid $gray-line;
 }
@@ -612,7 +613,9 @@ ul, li{
     .product-card__icon-block{
       display: block;
     }
-
+    .product-card__name{
+      color: $accent;
+    }
   }
   
 }
