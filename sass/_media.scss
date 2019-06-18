@@ -26,12 +26,19 @@
 	.product-card{
 		width: calc(25% - 60px);
 	}
-
+	.blog-preview__big-title{
+		font-size: rem(36);
+		line-height: rem(50);
+	}
 }
 	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1100px){
-
+	.blog-preview__big-title{
+		margin-top: 10px;
+		font-size: rem(26);
+		line-height: rem(40);
+	}
 }
 
 @media only screen and (max-width : 992px){
@@ -90,6 +97,21 @@
 		width: calc(33.33333% - 40px);
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+	.blog-previews{
+		flex-wrap:wrap;
+		height: auto;
+	}
+	.blog-preview{
+		height: 400px;
+
+		&--dbl{
+			flex-direction: row;
+		}
+	}
+	.blog-preview--main,
+	.blog-preview:nth-child(2){
+		    flex: 1 1 50%;
 	}
 }
 
@@ -340,7 +362,7 @@
 	}
 	.product-chars__tabs-item{
 		padding-top: 12px;
-		min-height: auto;
+		min-height: 0;
 		.mich-parg-12{
 			font-size: 14px;
 			line-height: 16px;
@@ -379,6 +401,65 @@
 		line-height: 16px;
 		color: rgba(#000, .5);
 		font-family: $r-r;
+	}
+	.faq-link{
+		&:hover, &:active{
+			color: $font;
+		}
+		
+	}
+	.blog-preview--main{
+		display: none;
+	}
+	.blog-preview{
+		height: auto;
+		margin-bottom: 17px;
+
+		&:nth-child(2){
+			flex: 1 1 100%;
+		}
+
+		&--dbl{
+			flex-wrap: wrap;
+			height: auto;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+	.blog-preview__image{
+		position: relative;
+		height: 200px;
+		margin-bottom: 12px;
+	}
+	.blog-preview-sub{
+		flex: 1 1 100%;
+		height: auto;
+		margin-bottom: 17px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.blog-preview__header{
+		display: none;
+	}
+	.blog-preview__mob-header{
+		display: block;
+	}
+	.blog-preview__title{
+		br{
+			display: none;
+			
+		}
+	}
+	.blog-preview__info{
+		margin-bottom: 5px;
+	}
+	.blog-preview__title{
+		font-size: 16px;
+		line-height: 21px;
 	}
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
@@ -521,7 +602,16 @@
 		padding-bottom: 0;
 		height: 180px;
 	}
-
+	.mich-news-popup .mich-news-popup__top{
+		flex-wrap: wrap;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.mich-news-popup .mich-news-popup__top .mich-form-label{
+		width: 100%;	
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 @media only screen and (max-width : 480px){
@@ -615,8 +705,14 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 769px){
 	/**/
+	.slideout-open .slideout-menu{
+		display: none;
+	}
+	.slideout-panel.panel-open:before{
+		display: none;
+	}
 }
 
 

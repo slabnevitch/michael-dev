@@ -10,11 +10,13 @@ block content
 		
 		.wrapper
 			.blog-previews
-				.blog-preview.blog-preview--main(style="background-image: url(img/blog/blog-1.jpg)")
+				a(href="#").blog-preview.blog-preview--main(style="background-image: url(img/blog/blog-1.jpg)")
 					.blog-preview__frame
 					.blog-preview__big-title Вопросы и Ответы
 				
-				.blog-preview(style="background-image: url(img/blog/blog-2.jpg)")
+				a(href="#").blog-preview
+					.blog-preview__image(style="background-image: url(img/blog/blog-2.jpg)")
+					
 					.blog-preview__header
 						.blog-preview__title Наш новый дистрибьютер 
 							br
@@ -22,21 +24,44 @@ block content
 						.blog-preview__info
 							span.blog-preview__date 20.03.2019
 							span.blog-preview__name Новости D’Michael
+					
+					.blog-preview__mob-header
+						.blog-preview__info
+							span.blog-preview__date 20.03.2019
+							span.blog-preview__name Новости D’Michael
+
+						.blog-preview__title Наш новый дистрибьютер 
+							br
+							| салон “Красавица”
 				
 				.blog-preview.blog-preview--dbl
-					.blog-preview-sub(style="background-image: url(img/blog/blog-3.jpg)")
+					a(href="#").blog-preview-sub
+						.blog-preview__image(style="background-image: url(img/blog/blog-3.jpg)")
 						.blog-preview__header
 							.blog-preview__title Новый аромат от D’Michael Les notes de Alsace
 							.blog-preview__info
 								span.blog-preview__date 16.02.2019
 								span.blog-preview__name Новости D’Michael
-				
-					.blog-preview-sub(style="background-image: url(img/blog/blog-4.jpg)")
+
+						.blog-preview__mob-header
+							.blog-preview__info
+								span.blog-preview__date 16.02.2019
+								span.blog-preview__name Новости D’Michael
+							.blog-preview__title Новый аромат от D’Michael Les notes de Alsace
+
+					a(href="#").blog-preview-sub
+						.blog-preview__image(style="background-image: url(img/blog/blog-4.jpg)")
 						.blog-preview__header
 							.blog-preview__title Готовим себя к весне!
 							.blog-preview__info
 								span.blog-preview__date 01.03.2019
 								span.blog-preview__name Блог “Дайте мне красоты!”
+
+						.blog-preview__mob-header
+							.blog-preview__info
+								span.blog-preview__date 01.03.2019
+								span.blog-preview__name Блог “Дайте мне красоты!”
+							.blog-preview__title Готовим себя к весне!
 			
 			.blog-bottom.text-center
 				a(href="#").button ЕЩЁ
