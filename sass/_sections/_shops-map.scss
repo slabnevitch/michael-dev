@@ -159,15 +159,31 @@
 	justify-content: space-between;
 	margin-bottom: 15px;
 }
+.mich-map-address__val{
+	flex: 1 1 35%;
+}
+.mich-map-address__contacs{
+ width: calc(65% - 60px);
+ padding-left: 30px;
+
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ align-items: flex-start;
+
+}
 .mich-map-address__phone{
 	position: relative;
-	margin-right: rem(46);
+	padding-right: rem(30);
+	width: 50%;	
 
 	&:before{
 		content: '';
 		display: inline-block;
 		vertical-align: middle;
-		margin-right: 14px;
+		margin-right: 10px;
 		width: 24px;
 		height: 24px;
 		background:  url(../img/icons/phone.png) 0 0 no-repeat;
@@ -176,11 +192,17 @@
 
 }
 .mich-map-address__schedule{
+	width: 50%;
+	position: relative;
+	padding-left: 30px;		
+
 	span{
-		vertical-align: middle;
 	}
 	.icon-time{
-		margin-right: 14px;
+		position: absolute;
+		top: 0;
+		left: 0;	
+		margin-right: 9px;
 	}
 }
 .map-disclose{

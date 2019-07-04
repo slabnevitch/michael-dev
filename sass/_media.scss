@@ -1,9 +1,17 @@
 /*==========  Desktop First Method  ==========*/
 
- 
 
+
+@media only screen and (max-width : 1260px){
+	.mich-map-address__val{
+		flex: 1 1 30%;
+	}
+	.mich-map-address__contacs{
+		    width: calc(70% - 60px);
+	}
+} 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px){
+@media only screen and (max-width : 1200px){ 
 	html{
 		font-size: 13px;
 	}
@@ -29,6 +37,10 @@
 	.blog-preview__big-title{
 		font-size: rem(36);
 		line-height: rem(50);
+	}
+	.mich-map-address__contacs{
+		width: 100%;
+		padding-left: 0;
 	}
 }
 	
@@ -72,6 +84,13 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+	}
+	.mich-map-address__val{
+		flex: 1 1 35%;
+	}
+	.mich-map-address__contacs{
+		padding-left: 30px;
+		width: calc(65% - 60px);
 	}
 	.mich-map-address__contacs .mich-link-menu{
 		display: inline-block;
@@ -467,6 +486,17 @@
 		}
 		
 	}
+	.mich-map-address__contacs{
+		padding-left: 0;	
+		width: 100%;
+	}
+	.mich-map-address__phone{
+		padding-right: 0;
+		width: 	auto;
+	}
+	.mich-map-address__schedule{
+		width: auto;	
+	}
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
 
@@ -630,6 +660,9 @@
 			display: block;
 
 		}
+	}
+	.mich-map-address__contacs{
+		display: block;
 	}
 }
 		
