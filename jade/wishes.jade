@@ -10,5 +10,14 @@ block content
 		.wrapper.wishes-wrapper
 			.wishes-content
 				- for (var i=0; i < 6; i++)
-					include _includes/card
+					.product-card
+						.product-card__top
+							.product-card__icon-block
+								a(href="#").mich-icomoon-icon.icon-heart-full.iconed-link
+								a(href="#mich-popup-quick-view").mich-icomoon-icon.icon-mag.iconed-link.to-popup
+
+							.product-card__img-wrap
+								img(src="img/product.jpg", alt="alt").product-card__img
+
+						a(href="#").product-card__name.mich-link-menu Маска для рук D'Michaél Les note de Versailles
 

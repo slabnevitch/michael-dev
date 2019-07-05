@@ -167,7 +167,10 @@ ul, li{
   	background-color: $accent;
   	color: #fff;
   }
-  
+  &:focus{
+    color: $accent; 
+    outline: none;
+  }
 
   &-full{
   	color: #fff;
@@ -175,7 +178,7 @@ ul, li{
   	background-color: $accent;
 
   	&:hover, &:active{
-  		background-color: transparent;
+  		background-color: #fff;
   		color: $accent;
   	}
   	
@@ -662,8 +665,18 @@ ul, li{
     }
     
   }
-  .icon-heart-full{
+  .icon-heart-full,
+  .icon-heart-empty{
     margin-bottom: 17px;
+  }
+  .icon-heart-empty{
+    &:hover, &:active{
+      &:before{
+        content: "\e909";
+        color: $pink;
+      }
+    }
+    
   }
 }
 .text{

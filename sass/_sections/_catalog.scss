@@ -48,6 +48,14 @@
 				.icon-mag{
 					display: none;
 				}
+				.icon-heart-full{
+					&:hover, &:active{
+						&:before{
+							color: $font;
+						}
+					}
+					
+				}
 			}
 		}
 }
