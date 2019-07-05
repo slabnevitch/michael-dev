@@ -211,7 +211,13 @@
 	right: 20px;
 	padding-left: 7px;
 	padding-right: 41px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: $accent;
+	border: 2px solid $accent;
 	z-index: 1;
+	color: #fff;
+	text-transform: uppercase;
 	cursor: pointer;
 
 	.disclose-icon{
@@ -227,12 +233,15 @@
 	}
 
 	&:hover, &:active{
+		background-color: #fff;
+		color: $accent;
 		.disclose-icon{
 			&:before{
 				color: $accent;
 			}
 		}
 	}
+
 	&.contracted{
 		.disclose-icon{
 
