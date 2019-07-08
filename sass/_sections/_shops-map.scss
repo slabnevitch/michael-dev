@@ -124,6 +124,9 @@
 			color: $font;
 		}
 	}
+	&:focus{
+		text-decoration: none;
+	}
 }
 .mich-big-map{
 	width: 100%;

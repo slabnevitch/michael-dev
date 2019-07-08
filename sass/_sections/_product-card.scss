@@ -139,10 +139,12 @@
 			justify-content: center;
 		}
 		.tabs__content{
-			@include col();
-			@include col-6();
-			@include col-lg-10();
-			@include col-md-12();
+			// @include col();
+			// @include col-6();
+			// @include col-lg-10();
+			// @include col-md-12();
+			width: 100%;
+			max-width: 630px;
 
 			.tabs__item{
 				font-family: $r-l;

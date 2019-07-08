@@ -3255,7 +3255,8 @@ ul, li {
     color: #fff; }
   .button:focus {
     color: #49BAAE;
-    outline: none; }
+    outline: none;
+    background-color: transparent; }
   .button-full {
     color: #fff;
     text-transform: uppercase;
@@ -4062,6 +4063,10 @@ ul, li {
     vertical-align: middle; }
   .faq-link:hover, .faq-link:active {
     text-decoration: none; }
+  .faq-link:focus {
+    outline: none;
+    text-decoration: none;
+    color: #6A4F35; }
 
 .faq-icon {
   display: inline-block;
@@ -4351,6 +4356,8 @@ ul, li {
     margin-right: 8px; }
     .mich-mapview-handler .mich-icomoon-icon:before {
       color: #6A4F35; }
+  .mich-mapview-handler:focus {
+    text-decoration: none; }
 
 .mich-big-map {
   width: 100%;
@@ -4848,21 +4855,8 @@ span.blog-preview__date {
     -ms-flex-pack: center;
     justify-content: center; }
   .product-chars .tabs .tabs__content {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-left: 10px;
-    margin-right: 10px;
-    word-wrap: break-word;
-    width: -webkit-calc(50% - 20px);
-    width: calc(50% - 20px); }
-    @media screen and (max-width: 1100px) {
-      .product-chars .tabs .tabs__content {
-        width: -webkit-calc(83.33333% - 20px);
-        width: calc(83.33333% - 20px); } }
-    @media screen and (max-width: 980px) {
-      .product-chars .tabs .tabs__content {
-        width: -webkit-calc(100% - 20px);
-        width: calc(100% - 20px); } }
+    width: 100%;
+    max-width: 630px; }
     .product-chars .tabs .tabs__content .tabs__item {
       font-family: "RobotoLight", sans-serif; }
 

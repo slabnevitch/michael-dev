@@ -54,6 +54,11 @@
 		text-decoration: none;
 
 	}
+	&:focus{
+		outline: none;
+		text-decoration: none;
+		color: $font;
+	}
 }
 .faq-icon{
 	display: inline-block;

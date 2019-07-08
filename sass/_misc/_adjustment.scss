@@ -170,6 +170,7 @@ ul, li{
   &:focus{
     color: $accent; 
     outline: none;
+    background-color: transparent;
   }
 
   &-full{
